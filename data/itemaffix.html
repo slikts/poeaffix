@@ -1,0 +1,5334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Item affix - Path of Exile Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcAUlNACQoAXVVbDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+<meta name="generator" content="MediaWiki 1.23.13" />
+<meta name="og:title" content="Item affix" />
+<meta name="og:type" content="website" />
+<meta name="og:image" content="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/bc/Wiki.png" />
+<meta name="og:url" content="http://pathofexile.gamepedia.com/Item_affix" />
+<meta name="og:site_name" content="Path of Exile Wiki" />
+<link rel="ExportRDF" type="application/rdf+xml" title="Item affix" href="/index.php?title=Special:ExportRDF/Item_affix&amp;xmlmime=rdf" />
+<link rel="apple-touch-icon" href="" />
+<link rel="shortcut icon" href="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/6/64/Favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Path of Exile Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//pathofexile.gamepedia.com/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Path of Exile Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="/Item_affix" />
+<link rel="stylesheet" href="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=ext.curse.footer%2Cnetbar%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cz.skins.hydra%2Chydradark&amp;only=styles&amp;skin=hydradark&amp;*" />
+<!--[if lt IE 10]><link rel="stylesheet" href="http://hydra-media.cursecdn.com/hydra/ie.css" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=hydradark&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: pathofexile_gamepedia:resourceloader:filter:minify-css:7:4bb53f61038d1d0c8076eab7dc0679ac */</style>
+<script src="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hydradark&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Item_affix","wgTitle":"Item affix","wgCurRevisionId":177415,"wgRevisionId":177415,"wgArticleId":277,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Item mechanics"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Item_affix","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Item_Affix","wgVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true},"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"hydradark","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":false,"visualeditor-enable":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"hydra-simplesearch":true,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"profile-pref":1,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-user-rights":true,"echo-subscriptions-web-user-rights":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"language":"en","variant-gan":"gan",
+"variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs102":false,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs108":false,"searchNs109":false,"searchNs200":false,"searchNs202":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"echo-subscriptions-web-friendship":1,"echo-subscriptions-email-friendship":1,"echo-subscriptions-web-profile-comment":1,"echo-subscriptions-email-profile-comment":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false
+});},{},{});
+/* cache key: pathofexile_gamepedia:resourceloader:filter:minify-js:7:58e60fcce284a7245f40ebdc03314697 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.smw.style","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.siteGlobals","ext.claimWiki","ext.visualEditor.viewPageTarget.init","ext.curseAuth.banners","skins.vector.js"]);
+}</script>
+<meta itemprop="author" content="Gamepedia" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/hydra/csshover.min.htc")}</style><![endif]--><script type="text/javascript">
+	window.isMobileResponsive = false;
+</script> 
+<script>
+var script = document.createElement('script');
+var tstamp = new Date();
+script.id = 'factorem';
+script.src = 'http://cdm.cursecdn.com/js/gamepedia/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = false;
+script.type='text/javascript';
+document.head.appendChild(script);
+</script> </head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Item_affix skin-hydradark action-view vector-animateLayout show-ads site-pathofexile-gamepedia">
+<div id="netbar">
+	<ul class="netbar-left">
+		<li><a class="curse" href="http://www.gamepedia.com">Gamepedia</a></li>
+					<li><a href="http://support.curse.com/">Help</a></li>
+					</ul>
+	<ul class="netbar-right">
+							<li><a href="/index.php?title=Special:UserLogin&returnto=Item+affix" id="login-link">Sign In</a></li>
+							<li><a href="/index.php?title=Special:UserLogin&returnto=Item+affix&type=signup" id="register-link">Register</a></li>
+						</ul>
+</div>
+	<div id="global-wrapper">
+		<div id="mw-navigation">
+			<div id="mw-page-base" class="noprint"></div>
+			<div id="mw-head">
+				<!--<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/index.php?title=Special:UserLogin&amp;returnto=Item+affix&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Item+affix" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>	</ul>
+</div>-->
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/Item_affix"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk"><span><a href="/Talk:Item_affix"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-sharing" role="sharing" class="vectorMenu" aria-labelledby="p-sharing-label">
+	<h4>Share</h4>
+	<h3 id="p-sharing-label"><span>Share</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+							<li>
+				<div id="socialIconImages">
+					<a href="https://twitter.com/intent/tweet?text=Check+out+Item+affix+on+Path+of+Exile+Wiki+--&via=CurseGamepedia&url=http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png"/></a><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png"/></a><a href="https://plus.google.com/share?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix" target="_blank"><img src="/extensions/Social/images/square_icons/googleplus.png"/></a><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix&title=Check+out+Item+affix+on+Path+of+Exile+Wiki+via+%40CurseGamepedia%3A+http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix" target="_blank"><img src="/extensions/Social/images/square_icons/reddit.png"/></a><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix&name=Path+of+Exile+Wiki&description=Check+out+Item+affix+on+Path+of+Exile+Wiki+via+%3Ca+href%3D%22https%3A%2F%2Ftwitter.com%2FCurseGamepedia%22+target%3D%22_blank%22%3E%40CurseGamepedia%3C%2Fa%3E%3A+http%3A%2F%2Fpathofexile.gamepedia.com%2FItem_affix" target="_blank"><img src="/extensions/Social/images/square_icons/tumblr.png"/></a>
+				</div>
+</li>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/Item_affix" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="/index.php?title=Item_affix&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Item_affix&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Path of Exile Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="noprint">
+				<div id="p-logo"><a href="/Path_of_Exile_Wiki"  title="Visit the main page"><img src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/bc/Wiki.png?version=ea303ffc3755de0a27e1240c0655e5d1"/></a></div>
+				<!-- <div id="p-portals"> -->
+					<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+	<h3 id='p-navigation-label'>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/Path_of_Exile_Wiki" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="/Path_of_Exile_Wiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-Admin-noticeboard"><a href="/Path_of_Exile_Wiki:Admin_noticeboard">Admin noticeboard</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Fan_Portal' aria-labelledby='p-Fan_Portal-label'>
+	<h3 id='p-Fan_Portal-label'>Fan Portal</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Market-Browser"><a href="http://poe.trade" rel="nofollow" target="_blank">Market Browser</a></li>
+			<li id="n-Community-Apps"><a href="/List_of_Path_of_Exile_related_applications">Community Apps</a></li>
+			<li id="n-Community-Websites"><a href="/List_of_Path_of_Exile_related_websites">Community Websites</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Gamepedia' aria-labelledby='p-Gamepedia-label'>
+	<h3 id='p-Gamepedia-label'>Gamepedia</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Gamepedia-Forums"><a href="http://gamepedia.com/forums" target="_blank">Gamepedia Forums</a></li>
+			<li id="n-Help-Wiki"><a href="http://help.gamepedia.com" target="_blank">Help Wiki</a></li>
+			<li id="n-Contact-Us"><a href="http://help.gamepedia.com/How_To_Contact_Gamepedia" target="_blank">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+	<h3 id='p-tb-label'>Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Item_affix" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Item_affix" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="/index.php?title=Item_affix&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="/index.php?title=Item_affix&amp;oldid=177415" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/index.php?title=Item_affix&amp;action=info">Page information</a></li>
+			<li id="t-smwbrowselink"><a href="/Special:Browse/Item_affix" rel="smw-browse">Browse properties</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-socialProfiles' aria-labelledby='p-socialProfiles-label'>
+	<h3 id='p-socialProfiles-label'></h3>
+	<div class="body">
+		<div class='socialSidebar'>
+						<script type='text/javascript'>
+							document.getElementById('p-socialProfiles').className = 'portal persistent';
+						</script>
+						<div class='socialLink twitter'><a href="https://twitter.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png" /></a></div><div class='socialLink facebook'><a href="https://www.facebook.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png" /></a></div><div class='socialLink youtube'><a href="https://www.youtube.com/CurseEntertainment" target="_blank"><img src="/extensions/Social/images/square_icons/youtube.png" /></a></div><div class='socialLink googleplus'><a href="https://plus.google.com/115617982346226991528" target="_blank" rel="Publisher"><img src="/extensions/Social/images/square_icons/googleplus.png" /></a></div>
+					</div>	</div>
+</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div id="pageWrapper">
+			<div id="mw-head-base" class="noprint"></div>
+			<!-- content -->
+			<div id="content" itemprop="articleBody" class="mw-body">
+				<a id="top"></a>
+				<div id="mw-js-message" style="display:none;"></div>
+								<!-- first ads placement -->
+									<div class="atflb">
+						<div id='cdm-zone-01'></div>					</div>
+								<!-- /first ads placement -->
+				<!-- firstHeading -->
+				<h1 id="firstHeading" class="firstHeading">
+					<span itemprop="name" dir="auto">Item affix</span>
+				</h1>
+				<!-- /firstHeading -->
+				<div id="bodyWrapper">
+					<!-- bodyContent -->
+					<div id="bodyContent">
+												<!-- 300x250 Ad block -->
+						<div class="atfmrec">
+							<div id='cdm-zone-02'></div>						</div>
+						<!-- End 300x250 Ad block -->
+												<!-- /sidebar -->
+												<div id="siteSub">From Path of Exile Wiki</div>
+												<div id="contentSub">(Redirected from <a href="/index.php?title=Item_Affix&amp;redirect=no" title="Item Affix">Item Affix</a>)</div>
+																		<div id="jump-to-nav" class="mw-jump">
+							Jump to:							<a href="#mw-navigation">navigation</a>, 							<a href="#p-search">search</a>
+						</div>
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="rellink">For jewel affixes, see <a href="/Jewel" title="Jewel">Jewel</a>.</div>
+<p>Equipment can be found in <a href="/Magic" title="Magic" class="mw-redirect">magic</a> and <a href="/Rare" title="Rare" class="mw-redirect">rare</a> rarities, being imbued with special modifications that grant passive buffs to their wielder. These modifications are added with affixes, sorted into <b>prefixes</b> and <b>suffixes</b>. A magic item may have up to one prefix and one suffix, while a rare may have up to three of each. <a href="/Unique_items" title="Unique items" class="mw-redirect">Unique items</a> have custom modifications and do not have affixes.
+</p><p>The name of a magic item contains the prefix and suffix modifications applied to it. For example, a Long Bow with the "Frosted" prefix and the "of Impact" suffix would be named "Frosted Long Bow of Impact". Rare items have their names randomly generated from a <a href="/Rare_Item_Name_Index" title="Rare Item Name Index">list of rare names</a> and do not follow this system.
+</p><p>Magic items can only have a prefix and suffix, so if they are already named X Item of Y, you can't use <a href="/Orb_of_Augmentation" title="Orb of Augmentation">Orbs of Augmentation</a> on them. <a href="/Exalted_Orb" title="Exalted Orb">Exalted Orbs</a> can be used on rare items with fewer than six affixes.
+</p><p>All affixes have a level associated with them, and will only appear on items with an <a href="/Item_level" title="Item level">item level</a> greater than or equal to the modifier's level.
+</p><p><i>Information taken from <a rel="nofollow" target="_blank" class="external text" href="http://www.pathofexile.com/item-data">the Path of Exile website</a>. Note that item limitations were observed in game and by searching <a rel="nofollow" target="_blank" class="external text" href="http://poe.xyz.is">poe.xyz.is</a>, so there may be errors.</i>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Modifier_Explanations"><span class="tocnumber">1</span> <span class="toctext">Modifier Explanations</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Prefixes"><span class="tocnumber">2</span> <span class="toctext">Prefixes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Armour"><span class="tocnumber">2.1</span> <span class="toctext">Armour</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Armour_and_Stun_Recovery"><span class="tocnumber">2.2</span> <span class="toctext">Armour and Stun Recovery</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Base_Damage"><span class="tocnumber">2.3</span> <span class="toctext">Base Damage</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Global_Damage"><span class="tocnumber">2.3.1</span> <span class="toctext">Global Damage</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Local_One_Handed_Weapon_Damage"><span class="tocnumber">2.3.2</span> <span class="toctext">Local One Handed Weapon Damage</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Local_Bow_and_Two_Handed_Weapon_Damage"><span class="tocnumber">2.3.3</span> <span class="toctext">Local Bow and Two Handed Weapon Damage</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Local_One_Handed_Damage_to_Spells"><span class="tocnumber">2.3.4</span> <span class="toctext">Local One Handed Damage to Spells</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Local_Two_Handed_Damage_to_Spells"><span class="tocnumber">2.3.5</span> <span class="toctext">Local Two Handed Damage to Spells</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Damage_Return"><span class="tocnumber">2.4</span> <span class="toctext">Damage Return</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Damage_Scaling"><span class="tocnumber">2.5</span> <span class="toctext">Damage Scaling</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Damage_Scaling_and_Accuracy"><span class="tocnumber">2.6</span> <span class="toctext">Damage Scaling and Accuracy</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Energy_Shield"><span class="tocnumber">2.7</span> <span class="toctext">Energy Shield</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Energy_Shield_and_Stun_Recovery"><span class="tocnumber">2.8</span> <span class="toctext">Energy Shield and Stun Recovery</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Evasion"><span class="tocnumber">2.9</span> <span class="toctext">Evasion</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Evasion_and_Stun_Recovery"><span class="tocnumber">2.10</span> <span class="toctext">Evasion and Stun Recovery</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Flask"><span class="tocnumber">2.11</span> <span class="toctext">Flask</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Flask_Effects"><span class="tocnumber">2.12</span> <span class="toctext">Flask Effects</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Gem_Level"><span class="tocnumber">2.13</span> <span class="toctext">Gem Level</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Hybrid_Defences"><span class="tocnumber">2.14</span> <span class="toctext">Hybrid Defences</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Hybrid_Defences_and_Stun_Recovery"><span class="tocnumber">2.15</span> <span class="toctext">Hybrid Defences and Stun Recovery</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Item_Acquisition"><span class="tocnumber">2.16</span> <span class="toctext">Item Acquisition</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Life"><span class="tocnumber">2.17</span> <span class="toctext">Life</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Life_Leech"><span class="tocnumber">2.18</span> <span class="toctext">Life Leech</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Mana"><span class="tocnumber">2.19</span> <span class="toctext">Mana</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Mana_Leech"><span class="tocnumber">2.20</span> <span class="toctext">Mana Leech</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Movement_Velocity"><span class="tocnumber">2.21</span> <span class="toctext">Movement Velocity</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Spell_Damage"><span class="tocnumber">2.22</span> <span class="toctext">Spell Damage</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#One_Handed_Spell_Damage"><span class="tocnumber">2.23</span> <span class="toctext">One Handed Spell Damage</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#One_Handed_Spell_Damage_and_Mana"><span class="tocnumber">2.24</span> <span class="toctext">One Handed Spell Damage and Mana</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Staff_Spell_Damage"><span class="tocnumber">2.25</span> <span class="toctext">Staff Spell Damage</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Staff_Spell_Damage_and_Mana"><span class="tocnumber">2.26</span> <span class="toctext">Staff Spell Damage and Mana</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Weapon_Elemental_Damage"><span class="tocnumber">2.27</span> <span class="toctext">Weapon Elemental Damage</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-35"><a href="#Suffixes"><span class="tocnumber">3</span> <span class="toctext">Suffixes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-36"><a href="#Accuracy"><span class="tocnumber">3.1</span> <span class="toctext">Accuracy</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Attack_Speed"><span class="tocnumber">3.2</span> <span class="toctext">Attack Speed</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Attribute_Increase"><span class="tocnumber">3.3</span> <span class="toctext">Attribute Increase</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Cast_Speed"><span class="tocnumber">3.4</span> <span class="toctext">Cast Speed</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Critical_Strike"><span class="tocnumber">3.5</span> <span class="toctext">Critical Strike</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#Spell_Critical_Strike"><span class="tocnumber">3.6</span> <span class="toctext">Spell Critical Strike</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#Elemental_Damage_Scaling"><span class="tocnumber">3.7</span> <span class="toctext">Elemental Damage Scaling</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#Flask_2"><span class="tocnumber">3.8</span> <span class="toctext">Flask</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Flask_Effects_2"><span class="tocnumber">3.9</span> <span class="toctext">Flask Effects</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Item_Acquisition_2"><span class="tocnumber">3.10</span> <span class="toctext">Item Acquisition</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Life_Gain_on_Attack_Hit"><span class="tocnumber">3.11</span> <span class="toctext">Life Gain on Attack Hit</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#Life_Gained_on_Enemy_Death"><span class="tocnumber">3.12</span> <span class="toctext">Life Gained on Enemy Death</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#Life_Regeneration"><span class="tocnumber">3.13</span> <span class="toctext">Life Regeneration</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Mana_Gained_on_Enemy_Death"><span class="tocnumber">3.14</span> <span class="toctext">Mana Gained on Enemy Death</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Mana_Regeneration"><span class="tocnumber">3.15</span> <span class="toctext">Mana Regeneration</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Projectile_Speed"><span class="tocnumber">3.16</span> <span class="toctext">Projectile Speed</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#Reduced_Attribute_Requirements"><span class="tocnumber">3.17</span> <span class="toctext">Reduced Attribute Requirements</span></a></li>
+<li class="toclevel-2 tocsection-53"><a href="#Resistance"><span class="tocnumber">3.18</span> <span class="toctext">Resistance</span></a></li>
+<li class="toclevel-2 tocsection-54"><a href="#Shield_Block"><span class="tocnumber">3.19</span> <span class="toctext">Shield Block</span></a></li>
+<li class="toclevel-2 tocsection-55"><a href="#Stun"><span class="tocnumber">3.20</span> <span class="toctext">Stun</span></a></li>
+<li class="toclevel-2 tocsection-56"><a href="#Stun_Recovery"><span class="tocnumber">3.21</span> <span class="toctext">Stun Recovery</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-57"><a href="#Special_affixes"><span class="tocnumber">4</span> <span class="toctext">Special affixes</span></a></li>
+<li class="toclevel-1 tocsection-58"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Modifier_Explanations">Modifier Explanations</span></h2>
+<p>Local modifiers only affect the item they appear on, for instance the "Vicious" mod (<span class="text-mod">Local Physical Damage +% 90–109</span>) This modifier on a sword will only affect the weapon's base damage. It won't affect the damage on an off-hand weapon when <a href="/Dual_Wielding" title="Dual Wielding" class="mw-redirect">dual-wielding</a>, and won't increase physical damage added from other items like rings. "Local" is found on weapons and armour, but "global" appears on all items.
+</p><p>A modifier will increase the required level of an item to 80% of the modifier's level if that value is greater than the level requirement for the base item.
+</p>
+<h2><span class="mw-headline" id="Prefixes">Prefixes</span></h2>
+<h3><span class="mw-headline" id="Armour">Armour</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, <a href="/Body_armour" title="Body armour">body armours</a> and <a href="/Amulet" title="Amulet">amulets</a>.Encased for belts
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Base Physical Damage Reduction Rating
+</th>
+<th> Local Physical Damage Reduction Rating +%
+</th>
+<th> Local Base Physical Damage Reduction Rating
+</th>
+<th> Physical Damage Reduction Rating +%
+</th></tr>
+<tr>
+<td> Lacquered </td>
+<td> 1 </td>
+<td> 3–10 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 3–10 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Reinforced </td>
+<td> 2 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 2–4
+</td></tr>
+<tr>
+<td> Reinforced </td>
+<td> 3 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 11–28 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Layered </td>
+<td> 17 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 29–46 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Layered </td>
+<td> 18 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 5-7
+</td></tr>
+<tr>
+<td> Studded </td>
+<td> 18 </td>
+<td> 11–35 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 11-35 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Lobstered </td>
+<td> 29 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 47–64 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Lobstered </td>
+<td> 30 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 8–10
+</td></tr>
+<tr>
+<td> Ribbed </td>
+<td> 30 </td>
+<td> 36–60 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 36–60 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Buttressed </td>
+<td> 42 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 65–82 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 11–13
+</td></tr>
+<tr>
+<td> Fortified </td>
+<td> 44 </td>
+<td> 61–138 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Fortified </td>
+<td> 46 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 61–138 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Thickened </td>
+<td> 56 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 14–16
+</td></tr>
+<tr>
+<td> Plated </td>
+<td> 57 </td>
+<td> 139-322 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Plated </td>
+<td> 59 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 139-322 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Thickened </td>
+<td> 60 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 83–100 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Solid </td>
+<td> 70 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 17–19
+</td></tr>
+<tr>
+<td> Carapaced </td>
+<td> 71 </td>
+<td> 323-400 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Girded </td>
+<td> 72 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 101-120 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Carapaced </td>
+<td> 73 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 323-400 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Impregnable </td>
+<td> 77 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 20-22
+</td></tr>
+<tr>
+<td> Encased </td>
+<td> 83 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 401-460 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr>
+<tr>
+<td> Impregnable </td>
+<td> 84 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td> 121-132 </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small> </td>
+<td class="table-na" style="text-align: center;"> <small>N/A</small>
+</td></tr></table>
+<h3><span class="mw-headline" id="Armour_and_Stun_Recovery">Armour and Stun Recovery</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable sortable" style="width: 700px; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Armour
+</th>
+<th> Base Stun Recovery
+</th></tr>
+<tr>
+<td> Beetle's </td>
+<td> 1 </td>
+<td> 6–14% </td>
+<td> 6–7%
+</td></tr>
+<tr>
+<td> Crab's </td>
+<td> 17 </td>
+<td> 15–23% </td>
+<td> 8–9%
+</td></tr>
+<tr>
+<td> Armadillo's </td>
+<td> 29 </td>
+<td> 24–32% </td>
+<td> 10–11%
+</td></tr>
+<tr>
+<td> Rhino's </td>
+<td> 42 </td>
+<td> 33–41% </td>
+<td> 12–13%
+</td></tr>
+<tr>
+<td> Elephant's </td>
+<td> 60 </td>
+<td> 42–50% </td>
+<td> 14–15%
+</td></tr>
+<tr>
+<td> Mammoth's </td>
+<td> 78 </td>
+<td> 51-56% </td>
+<td> 16-17%
+</td></tr></table>
+<h3><span class="mw-headline" id="Base_Damage">Base Damage</span></h3>
+<h4><span class="mw-headline" id="Global_Damage">Global Damage</span></h4>
+<p>Can appear on all items except body armours.
+</p><p><b>Fire</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Minimum Added Fire Damage
+</th>
+<th> Maximum Added Fire Damage
+</th></tr>
+<tr>
+<td>Heated</td>
+<td>1</td>
+<td>1-2</td>
+<td>3-4
+</td></tr>
+<tr>
+<td>Smouldering</td>
+<td>12</td>
+<td>8-10</td>
+<td>15-18
+</td></tr>
+<tr>
+<td>Smoking</td>
+<td>18</td>
+<td>12-16</td>
+<td>24-28
+</td></tr>
+<tr>
+<td>Burning</td>
+<td>26</td>
+<td>17-22</td>
+<td>33-39
+</td></tr>
+<tr>
+<td>Flaming</td>
+<td>33</td>
+<td>21-28</td>
+<td>42-49
+</td></tr>
+<tr>
+<td>Scorching</td>
+<td>42</td>
+<td>26-35</td>
+<td>53-61
+</td></tr>
+<tr>
+<td>Incinerating</td>
+<td>51</td>
+<td>32-42</td>
+<td>63-74
+</td></tr>
+<tr>
+<td>Blasting</td>
+<td>62</td>
+<td>38-51</td>
+<td>77-89
+</td></tr>
+<tr>
+<td>Cremating</td>
+<td>74</td>
+<td>45-61</td>
+<td>91-106
+</td></tr></table>
+<p><b>Cold</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Minimum Added Cold Damage
+</th>
+<th> Maximum Added Cold Damage
+</th></tr>
+<tr>
+<td>Frosted</td>
+<td>2</td>
+<td>1-2</td>
+<td>3
+</td></tr>
+<tr>
+<td>Chilled</td>
+<td>12</td>
+<td>6-8</td>
+<td>13-15
+</td></tr>
+<tr>
+<td>Icy</td>
+<td>19</td>
+<td>10-13</td>
+<td>19-23
+</td></tr>
+<tr>
+<td>Frigid</td>
+<td>27</td>
+<td>14-18</td>
+<td>27-32
+</td></tr>
+<tr>
+<td>Freezing</td>
+<td>34</td>
+<td>17-23</td>
+<td>34-40
+</td></tr>
+<tr>
+<td>Frozen</td>
+<td>43</td>
+<td>22-29</td>
+<td>43-50
+</td></tr>
+<tr>
+<td>Glaciated</td>
+<td>52</td>
+<td>26-35</td>
+<td>52-60
+</td></tr>
+<tr>
+<td>Polar</td>
+<td>65</td>
+<td>14–19</td>
+<td>29–34
+</td></tr>
+<tr>
+<td>Entombing</td>
+<td>75</td>
+<td>37-50</td>
+<td>74-87
+</td></tr></table>
+<p><b>Lightning</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Minimum Added Lightning Damage
+</th>
+<th> Maximum Added Lightning Damage
+</th></tr>
+<tr>
+<td>Humming</td>
+<td>3</td>
+<td>5</td>
+<td>
+</td></tr>
+<tr>
+<td>Buzzing</td>
+<td>13</td>
+<td>1</td>
+<td>14–15
+</td></tr>
+<tr>
+<td>Snapping</td>
+<td>22</td>
+<td>1-2</td>
+<td>22-23
+</td></tr>
+<tr>
+<td>Crackling</td>
+<td>28</td>
+<td>1-2</td>
+<td>27–28
+</td></tr>
+<tr>
+<td>Sparking</td>
+<td>35</td>
+<td>1-3</td>
+<td>33-34
+</td></tr>
+<tr>
+<td>Arcing</td>
+<td>44</td>
+<td>1-4</td>
+<td>40-43
+</td></tr>
+<tr>
+<td>Shocking</td>
+<td>52</td>
+<td>2-5</td>
+<td>47-50
+</td></tr>
+<tr>
+<td>Discharging</td>
+<td>64</td>
+<td>3-6</td>
+<td>57-61
+</td></tr>
+<tr>
+<td>Electrocuting</td>
+<td>76</td>
+<td>3-7</td>
+<td>68-72
+</td></tr></table>
+<p><b>Physical</b>
+</p>
+<table class="wikitable sortable" style="width: 700px; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Minimum Added Physical Damage
+</th>
+<th> Maximum Added Physical Damage
+</th></tr>
+<tr>
+<td> Glinting </td>
+<td> 5 </td>
+<td> 1 </td>
+<td> 2
+</td></tr>
+<tr>
+<td> Burnished </td>
+<td> 13 </td>
+<td> 2–3 </td>
+<td> 4–5
+</td></tr>
+<tr>
+<td> Polished </td>
+<td> 19 </td>
+<td> 3–4 </td>
+<td> 6–7
+</td></tr>
+<tr>
+<td> Honed </td>
+<td> 28 </td>
+<td> 4–6 </td>
+<td> 9–10
+</td></tr>
+<tr>
+<td> Gleaming </td>
+<td> 35 </td>
+<td> 5–7 </td>
+<td> 11–12
+</td></tr>
+<tr>
+<td> Annealed </td>
+<td> 44 </td>
+<td> 6–9 </td>
+<td> 13–15
+</td></tr>
+<tr>
+<td> Razor Sharp </td>
+<td> 52 </td>
+<td> 7–10 </td>
+<td> 15–18
+</td></tr>
+<tr>
+<td> Tempered </td>
+<td> 64 </td>
+<td> 9–12 </td>
+<td> 19–22
+</td></tr>
+<tr>
+<td> Flaring </td>
+<td> 76 </td>
+<td> 11–15 </td>
+<td> 22–26
+</td></tr></table>
+<h4><span class="mw-headline" id="Local_One_Handed_Weapon_Damage">Local One Handed Weapon Damage</span></h4>
+<p><b>Fire</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Fire Damage
+</th>
+<th> Local Maximum Added Fire Damage
+</th></tr>
+<tr>
+<td>Heated</td>
+<td>1</td>
+<td>1–2</td>
+<td>3–4
+</td></tr>
+<tr>
+<td>Smoldering</td>
+<td>11</td>
+<td>5–7</td>
+<td>11–13
+</td></tr>
+<tr>
+<td>Smoking</td>
+<td>18</td>
+<td>8–11</td>
+<td>17–20
+</td></tr>
+<tr>
+<td>Burning</td>
+<td>26</td>
+<td>11–15</td>
+<td>23–27
+</td></tr>
+<tr>
+<td>Flaming</td>
+<td>33</td>
+<td>14–19</td>
+<td>29–34
+</td></tr>
+<tr>
+<td>Scorching</td>
+<td>42</td>
+<td>18–24</td>
+<td>36–42
+</td></tr>
+<tr>
+<td>Incinerating</td>
+<td>51</td>
+<td>21–29</td>
+<td>43–50
+</td></tr>
+<tr>
+<td>Blasting</td>
+<td>62</td>
+<td>26–34</td>
+<td>52–61
+</td></tr>
+<tr>
+<td>Cremating</td>
+<td>74</td>
+<td>30–41</td>
+<td>62–72
+</td></tr></table>
+<p><b>Cold</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Cold Damage
+</th>
+<th> Local Maximum Added Cold Damage
+</th></tr>
+<tr>
+<td>Frosted</td>
+<td>2</td>
+<td>2</td>
+<td>4
+</td></tr>
+<tr>
+<td>Chilled</td>
+<td>12</td>
+<td>5–7</td>
+<td>10–12
+</td></tr>
+<tr>
+<td>Icy</td>
+<td>19</td>
+<td>7–10</td>
+<td>21–25
+</td></tr>
+<tr>
+<td>Frigid</td>
+<td>27</td>
+<td>10–14</td>
+<td>21–25
+</td></tr>
+<tr>
+<td>Freezing</td>
+<td>34</td>
+<td>12–17</td>
+<td>26–30
+</td></tr>
+<tr>
+<td>Frozen</td>
+<td>43</td>
+<td>16–21</td>
+<td>32–38
+</td></tr>
+<tr>
+<td>Glaciated</td>
+<td>52</td>
+<td>19–25</td>
+<td>39–45
+</td></tr>
+<tr>
+<td>Polar</td>
+<td>63</td>
+<td>23–31</td>
+<td>46–54
+</td></tr>
+<tr>
+<td>Entombing</td>
+<td>75</td>
+<td>27–36</td>
+<td>55–64
+</td></tr></table>
+<p><b>Lightning</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Lightning Damage
+</th>
+<th> Local Maximum Added Lightning Damage
+</th></tr>
+<tr>
+<td>Humming</td>
+<td>3</td>
+<td>1</td>
+<td>9-10
+</td></tr>
+<tr>
+<td>Buzzing</td>
+<td>13</td>
+<td>1–2</td>
+<td>23–25
+</td></tr>
+<tr>
+<td>Snapping</td>
+<td>19</td>
+<td>1-3</td>
+<td>31-33
+</td></tr>
+<tr>
+<td>Crackling</td>
+<td>31</td>
+<td>2–5</td>
+<td>48–51
+</td></tr>
+<tr>
+<td>Sparking</td>
+<td>34</td>
+<td>2-5</td>
+<td>52-56
+</td></tr>
+<tr>
+<td>Arcing</td>
+<td>42</td>
+<td>3-6</td>
+<td>63-67
+</td></tr>
+<tr>
+<td>Shocking</td>
+<td>51</td>
+<td>3-8</td>
+<td>76-81
+</td></tr>
+<tr>
+<td>Discharging</td>
+<td>63</td>
+<td>5-10</td>
+<td>93-98
+</td></tr>
+<tr>
+<td>Electrocuting</td>
+<td>74</td>
+<td>5-11</td>
+<td>108-115
+</td></tr></table>
+<p><b>Physical</b>
+</p>
+<table class="wikitable sortable" style="width: 700px; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Physical Damage
+</th>
+<th> Local Maximum Physical Damage
+</th></tr>
+<tr>
+<td> Glinting </td>
+<td> 2 </td>
+<td> 1 </td>
+<td> 2–3
+</td></tr>
+<tr>
+<td> Burnished </td>
+<td> 13 </td>
+<td> 4–5 </td>
+<td> 8–9
+</td></tr>
+<tr>
+<td> Polished </td>
+<td> 21 </td>
+<td> 6–8 </td>
+<td> 12–14
+</td></tr>
+<tr>
+<td> Honed </td>
+<td> 29 </td>
+<td> 7–10 </td>
+<td> 15–18
+</td></tr>
+<tr>
+<td> Gleaming </td>
+<td> 36 </td>
+<td> 9–12 </td>
+<td> 19–22
+</td></tr>
+<tr>
+<td> Annealed </td>
+<td> 46 </td>
+<td> 12–16 </td>
+<td> 24–28
+</td></tr>
+<tr>
+<td> Razor Sharp </td>
+<td> 54 </td>
+<td> 13–18 </td>
+<td> 27–32
+</td></tr>
+<tr>
+<td> Tempered </td>
+<td> 65 </td>
+<td> 16–22 </td>
+<td> 33–38
+</td></tr>
+<tr>
+<td> Flaring </td>
+<td> 77 </td>
+<td> 19–25 </td>
+<td> 38–45
+</td></tr></table>
+<h4><span class="mw-headline" id="Local_Bow_and_Two_Handed_Weapon_Damage">Local Bow and Two Handed Weapon Damage</span></h4>
+<p><b>Fire</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Fire Damage
+</th>
+<th> Local Maximum Added Fire Damage
+</th></tr>
+<tr>
+<td>Heated</td>
+<td>1</td>
+<td>2–3</td>
+<td>5–6
+</td></tr>
+<tr>
+<td>Smoldering</td>
+<td>11</td>
+<td>8–11</td>
+<td>17–20
+</td></tr>
+<tr>
+<td>Smoking</td>
+<td>18</td>
+<td>12–17</td>
+<td>26–30
+</td></tr>
+<tr>
+<td>Burning</td>
+<td>26</td>
+<td>17–23</td>
+<td>35–41
+</td></tr>
+<tr>
+<td>Flaming</td>
+<td>33</td>
+<td>21–29</td>
+<td>44–51
+</td></tr>
+<tr>
+<td>Scorching</td>
+<td>42</td>
+<td>27–36</td>
+<td>54–64
+</td></tr>
+<tr>
+<td>Incinerating</td>
+<td>51</td>
+<td>32–43</td>
+<td>65–76
+</td></tr>
+<tr>
+<td>Blasting</td>
+<td>62</td>
+<td>39–52</td>
+<td>79–92
+</td></tr>
+<tr>
+<td>Cremating</td>
+<td>74</td>
+<td>46–62</td>
+<td>93–109
+</td></tr></table>
+<p><b>Cold</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Cold Damage
+</th>
+<th> Local Maximum Added Cold Damage
+</th></tr>
+<tr>
+<td>Frosted</td>
+<td>2</td>
+<td>2-4</td>
+<td>6-7
+</td></tr>
+<tr>
+<td>Chilled</td>
+<td>12</td>
+<td>8-10</td>
+<td>16–19
+</td></tr>
+<tr>
+<td>Icy</td>
+<td>19</td>
+<td>11–15</td>
+<td>23–27
+</td></tr>
+<tr>
+<td>Frigid</td>
+<td>27</td>
+<td>16–21</td>
+<td>32–37
+</td></tr>
+<tr>
+<td>Freezing</td>
+<td>34</td>
+<td>19–26</td>
+<td>39–46
+</td></tr>
+<tr>
+<td>Frozen</td>
+<td>43</td>
+<td>24–32</td>
+<td>49–57
+</td></tr>
+<tr>
+<td>Glaciated</td>
+<td>52</td>
+<td>29–39</td>
+<td>58–68
+</td></tr>
+<tr>
+<td>Polar</td>
+<td>63</td>
+<td>35–46</td>
+<td>70–81
+</td></tr>
+<tr>
+<td>Entombing</td>
+<td>75</td>
+<td>41–55</td>
+<td>82–96
+</td></tr></table>
+<p><b>Lightning</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Lightning Damage
+</th>
+<th> Local Maximum Added Lightning Damage
+</th></tr>
+<tr>
+<td>Humming</td>
+<td>3</td>
+<td>14-15</td>
+<td>
+</td></tr>
+<tr>
+<td>Buzzing</td>
+<td>13</td>
+<td>1–3</td>
+<td>35–37
+</td></tr>
+<tr>
+<td>Snapping</td>
+<td>19</td>
+<td>2-5</td>
+<td>47-50
+</td></tr>
+<tr>
+<td>Crackling</td>
+<td>31</td>
+<td>3–7</td>
+<td>73–77
+</td></tr>
+<tr>
+<td>Sparking</td>
+<td>34</td>
+<td>3-8</td>
+<td>79-83
+</td></tr>
+<tr>
+<td>Arcing</td>
+<td>42</td>
+<td>5-10</td>
+<td>96-101
+</td></tr>
+<tr>
+<td>Shocking</td>
+<td>51</td>
+<td>6-12</td>
+<td>115-121
+</td></tr>
+<tr>
+<td>Discharging</td>
+<td>63</td>
+<td>7-15</td>
+<td>140-148
+</td></tr>
+<tr>
+<td>Electrocuting</td>
+<td>74</td>
+<td>8-17</td>
+<td>163-172
+</td></tr></table>
+<p><b>Physical</b>
+</p>
+<table class="wikitable sortable" style="width: 700px; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Physical Damage
+</th>
+<th> Local Maximum Physical Damage
+</th></tr>
+<tr>
+<td> Glinting </td>
+<td> 2 </td>
+<td> 2 </td>
+<td> 4-5
+</td></tr>
+<tr>
+<td> Burnished </td>
+<td> 13 </td>
+<td> 6–8 </td>
+<td> 12–14
+</td></tr>
+<tr>
+<td> Polished </td>
+<td> 21 </td>
+<td> 9–12 </td>
+<td> 18–21
+</td></tr>
+<tr>
+<td> Honed </td>
+<td> 29 </td>
+<td> 11–15 </td>
+<td> 23–27
+</td></tr>
+<tr>
+<td> Gleaming </td>
+<td> 36 </td>
+<td> 14–19 </td>
+<td> 28–33
+</td></tr>
+<tr>
+<td> Annealed </td>
+<td> 46 </td>
+<td> 18–24 </td>
+<td> 36–42
+</td></tr>
+<tr>
+<td> Razor Sharp </td>
+<td> 54 </td>
+<td> 20–27 </td>
+<td> 41–48
+</td></tr>
+<tr>
+<td> Tempered </td>
+<td> 65 </td>
+<td> 24–33 </td>
+<td> 49–57
+</td></tr>
+<tr>
+<td> Flaring </td>
+<td> 77 </td>
+<td> 29–38 </td>
+<td> 58–68
+</td></tr></table>
+<h4><span class="mw-headline" id="Local_One_Handed_Damage_to_Spells">Local One Handed Damage to Spells</span></h4>
+<p><b>Fire</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Spell Fire Damage
+</th>
+<th> Local Maximum Added Spell Fire Damage
+</th></tr>
+<tr>
+<td>Heated</td>
+<td>1</td>
+<td>1–2</td>
+<td>3–4
+</td></tr>
+<tr>
+<td>Smoldering</td>
+<td>11</td>
+<td>6–8</td>
+<td>12–14
+</td></tr>
+<tr>
+<td>Smoking</td>
+<td>18</td>
+<td>10-13</td>
+<td>19-22
+</td></tr>
+<tr>
+<td>Burning</td>
+<td>26</td>
+<td>13-18</td>
+<td>27-31
+</td></tr>
+<tr>
+<td>Flaming</td>
+<td>33</td>
+<td>17–22</td>
+<td>33-39
+</td></tr>
+<tr>
+<td>Scorching</td>
+<td>42</td>
+<td>21–28</td>
+<td>42–49
+</td></tr>
+<tr>
+<td>Incinerating</td>
+<td>51</td>
+<td>25–34</td>
+<td>51-59
+</td></tr>
+<tr>
+<td>Blasting</td>
+<td>62</td>
+<td>31-41</td>
+<td>61-71
+</td></tr>
+<tr>
+<td>Cremating</td>
+<td>74</td>
+<td>36–49</td>
+<td>73-85
+</td></tr></table>
+<p><b>Cold</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Cold Spell Damage
+</th>
+<th> Local Maximum Added Cold Spell Damage
+</th></tr>
+<tr>
+<td>Frosted</td>
+<td>1</td>
+<td>1</td>
+<td>2-3
+</td></tr>
+<tr>
+<td>Chilled</td>
+<td>11</td>
+<td>5–7</td>
+<td>10–12
+</td></tr>
+<tr>
+<td>Icy</td>
+<td>18</td>
+<td>8–10</td>
+<td>16-18
+</td></tr>
+<tr>
+<td>Frigid</td>
+<td>26</td>
+<td>11–15</td>
+<td>22–25
+</td></tr>
+<tr>
+<td>Freezing</td>
+<td>33</td>
+<td>14–18</td>
+<td>27–32
+</td></tr>
+<tr>
+<td>Frozen</td>
+<td>42</td>
+<td>17–23</td>
+<td>34-40
+</td></tr>
+<tr>
+<td>Glaciated</td>
+<td>51</td>
+<td>21-28</td>
+<td>41–48
+</td></tr>
+<tr>
+<td>Polar</td>
+<td>62</td>
+<td>25–33</td>
+<td>50-58
+</td></tr>
+<tr>
+<td>Entombing</td>
+<td>74</td>
+<td>30-40</td>
+<td>60-69
+</td></tr></table>
+<p><b>Lightning</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Spell Lightning Damage
+</th>
+<th> Local Maximum Added Spell Lightning Damage
+</th></tr>
+<tr>
+<td>Humming</td>
+<td>1</td>
+<td>1</td>
+<td>4-5
+</td></tr>
+<tr>
+<td>Buzzing</td>
+<td>11</td>
+<td>1–2</td>
+<td>21–22
+</td></tr>
+<tr>
+<td>Snapping</td>
+<td>18</td>
+<td>1-3</td>
+<td>33-35
+</td></tr>
+<tr>
+<td>Crackling</td>
+<td>26</td>
+<td>1–4</td>
+<td>46-49
+</td></tr>
+<tr>
+<td>Sparking</td>
+<td>33</td>
+<td>2-5</td>
+<td>58-61
+</td></tr>
+<tr>
+<td>Arcing</td>
+<td>42</td>
+<td>2-6</td>
+<td>73-77
+</td></tr>
+<tr>
+<td>Shocking</td>
+<td>51</td>
+<td>2-7</td>
+<td>88-93
+</td></tr>
+<tr>
+<td>Discharging</td>
+<td>62</td>
+<td>3-9</td>
+<td>106-112
+</td></tr>
+<tr>
+<td>Electrocuting</td>
+<td>74</td>
+<td>3-10</td>
+<td>126-133
+</td></tr></table>
+<h4><span class="mw-headline" id="Local_Two_Handed_Damage_to_Spells">Local Two Handed Damage to Spells</span></h4>
+<p><b>Fire</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Spell Fire Damage
+</th>
+<th> Local Maximum Added Spell Fire Damage
+</th></tr>
+<tr>
+<td>Heated</td>
+<td>1</td>
+<td>1–2</td>
+<td>4-5
+</td></tr>
+<tr>
+<td>Smoldering</td>
+<td>11</td>
+<td>8-11</td>
+<td>17-19
+</td></tr>
+<tr>
+<td>Smoking</td>
+<td>18</td>
+<td>13-17</td>
+<td>26-30
+</td></tr>
+<tr>
+<td>Burning</td>
+<td>26</td>
+<td>18-24</td>
+<td>36-42
+</td></tr>
+<tr>
+<td>Flaming</td>
+<td>33</td>
+<td>23-30</td>
+<td>45-53
+</td></tr>
+<tr>
+<td>Scorching</td>
+<td>42</td>
+<td>28–38</td>
+<td>57-66
+</td></tr>
+<tr>
+<td>Incinerating</td>
+<td>51</td>
+<td>34-46</td>
+<td>68-80
+</td></tr>
+<tr>
+<td>Blasting</td>
+<td>62</td>
+<td>41-55</td>
+<td>83-96
+</td></tr>
+<tr>
+<td>Cremating</td>
+<td>74</td>
+<td>49-65</td>
+<td>98-115
+</td></tr></table>
+<p><b>Cold</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Cold Spell Damage
+</th>
+<th> Local Maximum Added Cold Spell Damage
+</th></tr>
+<tr>
+<td>Frosted</td>
+<td>1</td>
+<td>1-2</td>
+<td>3-4
+</td></tr>
+<tr>
+<td>Chilled</td>
+<td>11</td>
+<td>8-10</td>
+<td>15-18
+</td></tr>
+<tr>
+<td>Icy</td>
+<td>18</td>
+<td>12–16</td>
+<td>23-27
+</td></tr>
+<tr>
+<td>Frigid</td>
+<td>26</td>
+<td>16–22</td>
+<td>33-38
+</td></tr>
+<tr>
+<td>Freezing</td>
+<td>33</td>
+<td>21-27</td>
+<td>41-48
+</td></tr>
+<tr>
+<td>Frozen</td>
+<td>42</td>
+<td>26-34</td>
+<td>52-60
+</td></tr>
+<tr>
+<td>Glaciated</td>
+<td>51</td>
+<td>31-41</td>
+<td>62-73
+</td></tr>
+<tr>
+<td>Polar</td>
+<td>62</td>
+<td>38-50</td>
+<td>75-88
+</td></tr>
+<tr>
+<td>Entombing</td>
+<td>74</td>
+<td>45-60</td>
+<td>89-104
+</td></tr></table>
+<p><b>Lightning</b>
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Minimum Added Spell Lightning Damage
+</th>
+<th> Local Maximum Added Spell Lightning Damage
+</th></tr>
+<tr>
+<td>Humming</td>
+<td>1</td>
+<td>1</td>
+<td>6-7
+</td></tr>
+<tr>
+<td>Buzzing</td>
+<td>11</td>
+<td>1–3</td>
+<td>32-34
+</td></tr>
+<tr>
+<td>Snapping</td>
+<td>18</td>
+<td>1-4</td>
+<td>49-52
+</td></tr>
+<tr>
+<td>Crackling</td>
+<td>26</td>
+<td>2-6</td>
+<td>69-73
+</td></tr>
+<tr>
+<td>Sparking</td>
+<td>33</td>
+<td>2-7</td>
+<td>87-92
+</td></tr>
+<tr>
+<td>Arcing</td>
+<td>42</td>
+<td>3-9</td>
+<td>109-115
+</td></tr>
+<tr>
+<td>Shocking</td>
+<td>51</td>
+<td>4-11</td>
+<td>132-139
+</td></tr>
+<tr>
+<td>Discharging</td>
+<td>62</td>
+<td>4-13</td>
+<td>159-168
+</td></tr>
+<tr>
+<td>Electrocuting</td>
+<td>74</td>
+<td>5-15</td>
+<td>189-200
+</td></tr></table>
+<h3><span class="mw-headline" id="Damage_Return">Damage Return</span></h3>
+<p>Limited to <a href="/Belts" title="Belts" class="mw-redirect">belts</a>, <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Physical Damage To Return To Melee Attacker
+</th></tr>
+<tr>
+<td> Thorny </td>
+<td> 1 </td>
+<td> 1–4
+</td></tr>
+<tr>
+<td> Spiny </td>
+<td> 10 </td>
+<td> 5–10
+</td></tr>
+<tr>
+<td> Barbed </td>
+<td> 20 </td>
+<td> 11–24
+</td></tr>
+<tr>
+<td> Jagged </td>
+<td> 35 </td>
+<td> 25–50
+</td></tr>
+</table>
+<h3><span class="mw-headline" id="Damage_Scaling">Damage Scaling</span></h3>
+<p>Appears only on <a href="/Weapon" title="Weapon">weapons</a>.
+</p>
+<table class="wikitable" style="width: 40%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Physical&#160;%+
+</th></tr>
+<tr>
+<td> Heavy </td>
+<td> 1 </td>
+<td> 40–49
+</td></tr>
+<tr>
+<td> Serrated </td>
+<td> 11 </td>
+<td> 50–64
+</td></tr>
+<tr>
+<td> Vagan 3 </td>
+<td> 20 </td>
+<td> 40–59
+</td></tr>
+<tr>
+<td> Wicked </td>
+<td> 23 </td>
+<td> 65–84
+</td></tr>
+<tr>
+<td> Vagan 5 </td>
+<td> 30 </td>
+<td> 60–79
+</td></tr>
+<tr>
+<td> Vicious </td>
+<td> 35 </td>
+<td> 85–109
+</td></tr>
+<tr>
+<td> Bloodthirsty </td>
+<td> 46 </td>
+<td> 110–134
+</td></tr>
+<tr>
+<td> Cruel </td>
+<td> 60 </td>
+<td> 135–154
+</td></tr>
+<tr>
+<td> Tyrannical </td>
+<td> 73 </td>
+<td> 155–169
+</td></tr>
+<tr>
+<td> Merciless </td>
+<td> 83 </td>
+<td> 170-179
+</td></tr></table>
+<h3><span class="mw-headline" id="Damage_Scaling_and_Accuracy">Damage Scaling and Accuracy</span></h3>
+<p>Appears only on <a href="/Weapon" title="Weapon">weapons</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Physical Damage +%
+</th>
+<th> Local Accuracy Rating
+</th></tr>
+<tr>
+<td> Squire's</td>
+<td>1</td>
+<td>15–19</td>
+<td> 3–7
+</td></tr>
+<tr>
+<td> Journeyman's</td>
+<td>11</td>
+<td>20–24</td>
+<td> 8–30
+</td></tr>
+<tr>
+<td> Reaver's</td>
+<td>23</td>
+<td>25–34</td>
+<td> 31–50
+</td></tr>
+<tr>
+<td> Mercenary's</td>
+<td>35</td>
+<td>35–54</td>
+<td> 51–64
+</td></tr>
+<tr>
+<td> Champion's</td>
+<td>46</td>
+<td>45–54</td>
+<td> 65–82
+</td></tr>
+<tr>
+<td> Conqueror's</td>
+<td>60</td>
+<td>55–64</td>
+<td> 83–99
+</td></tr>
+<tr>
+<td> Emperor's</td>
+<td>73</td>
+<td>65–74</td>
+<td> 100-135
+</td></tr>
+<tr>
+<td> Dictator's</td>
+<td>83</td>
+<td>75–79</td>
+<td> 135-169
+</td></tr></table>
+<h3><span class="mw-headline" id="Energy_Shield">Energy Shield</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>. Dazzling only for rings and amulets.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th class="unsortable"> Prefix
+</th>
+<th> Level
+</th>
+<th> Base Maximum Energy Shield
+</th>
+<th> Local Energy Shield
+</th>
+<th> Local Energy Shield +%
+</th>
+<th> Maximum Energy Shield +%
+</th></tr>
+<tr>
+<td> Shining</td>
+<td>3</td>
+<td>1–3</td>
+<td>3–5</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Protective</td>
+<td>3</td>
+<td>-</td>
+<td>-</td>
+<td>11–28</td>
+<td>2–4
+</td></tr>
+<tr>
+<td> Glimmering</td>
+<td>11</td>
+<td>4–8</td>
+<td>6–8</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Glittering</td>
+<td>17</td>
+<td>9–12</td>
+<td>9–12</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Strong-Willed</td>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+<td>29–46</td>
+<td>5–7
+</td></tr>
+<tr>
+<td> Glowing</td>
+<td>23</td>
+<td>13–15</td>
+<td>13–15</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Radiating</td>
+<td>29</td>
+<td>16–19</td>
+<td>16–19</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Resolute</td>
+<td>30</td>
+<td>-</td>
+<td>-</td>
+<td>47–64</td>
+<td>8–10
+</td></tr>
+<tr>
+<td> Pulsing</td>
+<td>35</td>
+<td>20–22</td>
+<td>20–29</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Seething</td>
+<td>42</td>
+<td>23–26</td>
+<td> - </td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Fearless</td>
+<td>42</td>
+<td>-</td>
+<td>-</td>
+<td> - </td>
+<td>11–13
+</td></tr>
+<tr>
+<td> Seething </td>
+<td> 43 </td>
+<td> - </td>
+<td> 30–48 </td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Fearless</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>65–82</td>
+<td> -
+</td></tr>
+<tr>
+<td> Blazing</td>
+<td>50</td>
+<td>27–31</td>
+<td> - </td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Blazing</td>
+<td>51</td>
+<td>-</td>
+<td>49–72</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Dauntless</td>
+<td>56</td>
+<td>-</td>
+<td>-</td>
+<td> - </td>
+<td>14–16
+</td></tr>
+<tr>
+<td> Scintillating</td>
+<td> 59 </td>
+<td>32–37</td>
+<td> - </td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Scintillating</td>
+<td>60</td>
+<td> - </td>
+<td>73–106</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Dauntless</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>83–100</td>
+<td> -
+</td></tr>
+<tr>
+<td> Incandescent</td>
+<td>68</td>
+<td>38–43</td>
+<td> - </td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Incandescent</td>
+<td>69</td>
+<td> - </td>
+<td>107–135</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Indomitable</td>
+<td>70</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>17–19
+</td></tr>
+<tr>
+<td> Unconquerable </td>
+<td> 72 </td>
+<td> - </td>
+<td> - </td>
+<td> 101–120 </td>
+<td> -
+</td></tr>
+<tr>
+<td> Resplendent </td>
+<td> 74 </td>
+<td> 44–47 </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> Resplendent </td>
+<td> 75 </td>
+<td> - </td>
+<td> 136–145 </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> Unassailable </td>
+<td> 77 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 20–22
+</td></tr>
+<tr>
+<td> Dazzling </td>
+<td> 80 </td>
+<td> 48-51 </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> Unassailable </td>
+<td> 84 </td>
+<td> - </td>
+<td> - </td>
+<td> 121–132 </td>
+<td> -
+</td></tr></table>
+<h3><span class="mw-headline" id="Energy_Shield_and_Stun_Recovery">Energy Shield and Stun Recovery</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Energy Shield +%
+</th>
+<th> Base Stun Recovery +%
+</th></tr>
+<tr>
+<td> Pixie's </td>
+<td> 3</td>
+<td> 6–14</td>
+<td>6–7
+</td></tr>
+<tr>
+<td>Gremlin's</td>
+<td> 18</td>
+<td>15–23</td>
+<td>8–9
+</td></tr>
+<tr>
+<td>Boggart's</td>
+<td> 30</td>
+<td>24–32</td>
+<td>10–11
+</td></tr>
+<tr>
+<td>Naga's</td>
+<td>44</td>
+<td>33–41</td>
+<td>12–13
+</td></tr>
+<tr>
+<td>Djinn's</td>
+<td>60</td>
+<td>42–50</td>
+<td>14–15
+</td></tr>
+<tr>
+<td> Seraphim's </td>
+<td> 78 </td>
+<td> 51–56 </td>
+<td> 16–17
+</td></tr></table>
+<h3><span class="mw-headline" id="Evasion">Evasion</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+Vaporous limited to rings
+</p>
+<table class="wikitable sortable" style="width: 60%; text-align: center">
+<tr>
+<th class="unsortable">Prefix
+</th>
+<th> Level
+</th>
+<th> Base Evasion Rating
+</th>
+<th> Evasion Rating +%
+</th>
+<th> Local Base Evasion Rating
+</th>
+<th> Local Evasion Rating +%
+</th></tr>
+<tr>
+<td> Agile</td>
+<td>1</td>
+<td>3–10</td>
+<td>2–4</td>
+<td>3–10</td>
+<td>-
+</td></tr>
+<tr>
+<td> Shade's</td>
+<td>3</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>11–28
+</td></tr>
+<tr>
+<td> Dancer's</td>
+<td>18</td>
+<td>11–35</td>
+<td>5–7</td>
+<td>11–35</td>
+<td>-
+</td></tr>
+<tr>
+<td> Ghost's</td>
+<td>19</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>29–46
+</td></tr>
+<tr>
+<td> Acrobat's</td>
+<td>29</td>
+<td>36–60</td>
+<td>8–10</td>
+<td>36–60</td>
+<td>-
+</td></tr>
+<tr>
+<td> Spectre's</td>
+<td>30</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>47–64
+</td></tr>
+<tr>
+<td> Fleet</td>
+<td>42</td>
+<td>61–80</td>
+<td>11–13</td>
+<td>61–138</td>
+<td>-
+</td></tr>
+<tr>
+<td> Wraith's</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>65–82
+</td></tr>
+<tr>
+<td>Blurred</td>
+<td>56</td>
+<td>-</td>
+<td>14–16</td>
+<td>139–322</td>
+<td>-
+</td></tr>
+<tr>
+<td> Blurred</td>
+<td>58</td>
+<td>81–120</td>
+<td>-</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Phantasm's</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>83–100
+</td></tr>
+<tr>
+<td> Phased</td>
+<td>70</td>
+<td>-</td>
+<td>17–19</td>
+<td> 323–400 </td>
+<td>-
+</td></tr>
+<tr>
+<td> Phased</td>
+<td> 72 </td>
+<td> 121–150 </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> Nightmare's</td>
+<td> 72 </td>
+<td>-</td>
+<td> -  </td>
+<td>-</td>
+<td> 101–120
+</td></tr>
+<tr>
+<td> Nightmare's</td>
+<td> 77 </td>
+<td>-</td>
+<td> 20–22 </td>
+<td>-</td>
+<td> -
+</td></tr>
+<tr>
+<td> Mirage's</td>
+<td> 84 </td>
+<td>-</td>
+<td> -  </td>
+<td>-</td>
+<td> 121-132
+</td></tr>
+<tr>
+<td> Vaporous</td>
+<td> 84 </td>
+<td> 151-170 </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr></table>
+<h3><span class="mw-headline" id="Evasion_and_Stun_Recovery">Evasion and Stun Recovery</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Local Evasion Rating +%
+</th>
+<th> Base Stun Recovery +%
+</th></tr>
+<tr>
+<td>Mosquito's</td>
+<td>2</td>
+<td>6–14</td>
+<td>6–7
+</td></tr>
+<tr>
+<td>Moth's</td>
+<td>19</td>
+<td>15–23</td>
+<td>8–9
+</td></tr>
+<tr>
+<td>Butterfly's</td>
+<td>30</td>
+<td>24–32</td>
+<td>10–11
+</td></tr>
+<tr>
+<td>Wasp's</td>
+<td>44</td>
+<td>33–41</td>
+<td>12–13
+</td></tr>
+<tr>
+<td>Dragonfly's</td>
+<td>60</td>
+<td>42–50</td>
+<td>14–15
+</td></tr>
+<tr>
+<td>Hummingbird's</td>
+<td>78</td>
+<td>51-56</td>
+<td>16-17
+</td></tr></table>
+<h3><span class="mw-headline" id="Flask">Flask</span></h3>
+<table class="wikitable" style="width: 80%; text-align: center">
+<tr>
+<th>  Prefix
+</th>
+<th> Level
+</th>
+<th> Stat
+</th>
+<th> Value
+</th></tr>
+<tr class="even">
+<td class="name"> Perpetual
+</td>
+<td> 3
+</td>
+<td>&#160;% Increased Charge Recovery
+</td>
+<td> 20–40
+</td></tr>
+<tr>
+<td class="name"> Ample
+</td>
+<td> 2
+</td>
+<td> Local Extra Max Charges
+</td>
+<td> 10–20
+</td></tr>
+<tr class="even">
+<td class="name"> Saturated
+</td>
+<td> 1
+</td>
+<td> Local Flask Amount To Recover +%<br />Local Flask Recovery Speed +%
+</td>
+<td> 50<br />-33
+</td></tr>
+<tr>
+<td class="name"> Cautious
+</td>
+<td> 6
+</td>
+<td> Local Flask Amount To Recover When Below Threshold +%<br />Local Flask Life&#160;% Threshold For Increased Recovery
+</td>
+<td> 100<br />35
+</td></tr>
+<tr class="even">
+<td class="name"> Sapping
+</td>
+<td> 13
+</td>
+<td> Local Flask Life To Recover +%<br />Local Flask Removes&#160;% Of Life Recovery From Mana On Use
+</td>
+<td> 60<br />10
+</td></tr>
+<tr>
+<td class="name"> Caustic
+</td>
+<td> 11
+</td>
+<td> Local Flask Mana To Recover +%<br />Local Flask Removes&#160;% Of Mana Recovery From Life On Use
+</td>
+<td> 60<br />15
+</td></tr>
+<tr class="even">
+<td class="name"> Panicked
+</td>
+<td> 9
+</td>
+<td> Local Flask Recover Instantly When Life Below&#160;%<br />Local Flask Amount To Recover +%
+</td>
+<td> 35<br />-25
+</td></tr>
+<tr>
+<td class="name"> Seething
+</td>
+<td> 7
+</td>
+<td> Local Flask Recovers Instantly<br />Local Flask Amount To Recover +%
+</td>
+<td> 1<br />-66
+</td></tr>
+<tr class="even">
+<td class="name"> Bubbling
+</td>
+<td> 3
+</td>
+<td> Local Flask Recovery Amount&#160;% To Recover Instantly<br />Local Flask Amount To Recover +%<br />Local Flask Recovery Speed +%
+</td>
+<td> 50<br />-50<br />135
+</td></tr>
+<tr>
+<td class="name"> Catalysed
+</td>
+<td> 1
+</td>
+<td> Local Flask Recovery Speed +%
+</td>
+<td> 50
+</td></tr>
+<tr class="even">
+<td class="name"> Surgeon's
+</td>
+<td> 8
+</td>
+<td> Local Recharge On Crit
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td class="name"> Avenger's
+</td>
+<td> 12
+</td>
+<td> Local Recharge On Take Crit
+</td>
+<td> 3
+</td></tr></table>
+<h3><span class="mw-headline" id="Flask_Effects">Flask Effects</span></h3>
+<p>Can only be found on <a href="/Belt" title="Belt">belts</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Flask Life Recovery Rate +%
+</th>
+<th> Flask Mana Recovery Rate +%
+</th></tr>
+<tr>
+<td> Recovering</td>
+<td>5</td>
+<td>10–20</td>
+<td>
+</td></tr>
+<tr>
+<td> Inspiring</td>
+<td>5</td>
+<td></td>
+<td>10–20
+</td></tr></table>
+<h3><span class="mw-headline" id="Gem_Level">Gem Level</span></h3>
+<p><a href="/Bow" title="Bow">Bow</a> effects only appear on bows. <a href="/Melee" title="Melee" class="mw-redirect">Melee</a> effects only appear on melee weapons. <a href="/Minion" title="Minion">Minion</a> effects only appear on helmets. Elemental effects and "Paragon's" are limited to weapons. "Nihilist's" can appear on wands, staves, daggers and spirit shields.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Stats
+</th>
+<th> Values
+</th></tr>
+<tr>
+<td> Fletcher's</td>
+<td>9</td>
+<td>Local Socketed Bow Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Sharpshooter's</td>
+<td>64</td>
+<td>Local Socketed Bow Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Frost Weaver's</td>
+<td>2</td>
+<td>Local Socketed Cold Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Winterbringer's</td>
+<td>55</td>
+<td>Local Socketed Cold Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Flame Spinner's</td>
+<td>2</td>
+<td>Local Socketed Fire Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Lava Caller's</td>
+<td>55</td>
+<td>Local Socketed Fire Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Paragon's</td>
+<td>50</td>
+<td>Local Socketed Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Thunder Lord's</td>
+<td>2</td>
+<td>Local Socketed Lightning Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Tempest King's</td>
+<td>55</td>
+<td>Local Socketed Lightning Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Combatant's</td>
+<td>8</td>
+<td>Local Socketed Melee Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Weaponmaster's</td>
+<td>63</td>
+<td>Local Socketed Melee Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Reanimator's</td>
+<td>14</td>
+<td>Local Socketed Minion Gem Level +</td>
+<td>1
+</td></tr>
+<tr>
+<td> Summoner's</td>
+<td>65</td>
+<td>Local Socketed Minion Gem Level +</td>
+<td>2
+</td></tr>
+<tr>
+<td> Nihilist's</td>
+<td>40</td>
+<td>Local Socketed Chaos Gem Level +</td>
+<td>1
+</td></tr></table>
+<h3><span class="mw-headline" id="Hybrid_Defences">Hybrid Defences</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable sortable" style="width: 60%; text-align: center">
+<tr>
+<th class="unsortable">Prefix
+</th>
+<th> Level
+</th>
+<th> Local Armour &amp; Energy Shield +%
+</th>
+<th> Local Armour &amp; Evasion +%
+</th>
+<th> Local Evasion &amp; Energy Shield +%
+</th></tr>
+<tr>
+<td> Infixed</td>
+<td>3</td>
+<td>11–28</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Scrapper's</td>
+<td>3</td>
+<td>-</td>
+<td>11–28</td>
+<td>-
+</td></tr>
+<tr>
+<td> Shadowy</td>
+<td>3</td>
+<td>-</td>
+<td>-</td>
+<td>11–28
+</td></tr>
+<tr>
+<td> Ingrained</td>
+<td>19</td>
+<td>29–46</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Brawler's</td>
+<td>19</td>
+<td>-</td>
+<td>29–46</td>
+<td>-
+</td></tr>
+<tr>
+<td> Ethereal</td>
+<td>19</td>
+<td>-</td>
+<td>-</td>
+<td>29–46
+</td></tr>
+<tr>
+<td> Instilled</td>
+<td>30</td>
+<td>47–64</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Fencer's</td>
+<td>30</td>
+<td>-</td>
+<td>47–64</td>
+<td>-
+</td></tr>
+<tr>
+<td> Unworldly</td>
+<td>30</td>
+<td>-</td>
+<td>-</td>
+<td>47–64
+</td></tr>
+<tr>
+<td> Infused</td>
+<td>44</td>
+<td>65–82</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Gladiator's</td>
+<td>44</td>
+<td>-</td>
+<td>65–82</td>
+<td>-
+</td></tr>
+<tr>
+<td> Ephemeral</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>65–82
+</td></tr>
+<tr>
+<td> Inculcated</td>
+<td>60</td>
+<td>83–100</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Duelist's</td>
+<td>60</td>
+<td>-</td>
+<td>83–100</td>
+<td>-
+</td></tr>
+<tr>
+<td> Evenescent</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>83–100
+</td></tr>
+<tr>
+<td> Interpolated</td>
+<td>72</td>
+<td>101–120</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Hero's</td>
+<td>72</td>
+<td>-</td>
+<td>101–120</td>
+<td>-
+</td></tr>
+<tr>
+<td> Unreal</td>
+<td>72</td>
+<td>-</td>
+<td>-</td>
+<td>101–120
+</td></tr>
+<tr>
+<td> Inspired</td>
+<td>72</td>
+<td>121-136</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> Legend's</td>
+<td>84</td>
+<td>-</td>
+<td>121-136</td>
+<td>-
+</td></tr>
+<tr>
+<td> Illusory</td>
+<td>84</td>
+<td>-</td>
+<td>-</td>
+<td>121-136
+</td></tr></table>
+<h3><span class="mw-headline" id="Hybrid_Defences_and_Stun_Recovery">Hybrid Defences and Stun Recovery</span></h3>
+<p>Limited to relevant <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable sortable" style="width: 70%; text-align: center">
+<tr>
+<th class="unsortable">Prefix
+</th>
+<th> Level
+</th>
+<th>Local Armour And Energy Shield +%
+</th>
+<th> Local Armour And Evasion +%
+</th>
+<th>Local Evasion And Energy Shield +%
+</th>
+<th> Base Stun Recovery +%
+</th></tr>
+<tr>
+<td>Pixie's</td>
+<td>2</td>
+<td>6–14</td>
+<td>-</td>
+<td>-</td>
+<td>6–7
+</td></tr>
+<tr>
+<td>Beetle's</td>
+<td>2</td>
+<td>-</td>
+<td>6–14</td>
+<td>-</td>
+<td>6–7
+</td></tr>
+<tr>
+<td>Mosquito's</td>
+<td>2</td>
+<td>-</td>
+<td>-</td>
+<td>6–14</td>
+<td>6–7
+</td></tr>
+<tr>
+<td>Gremlin's</td>
+<td>19</td>
+<td>15–23</td>
+<td>-</td>
+<td>-</td>
+<td>8–9
+</td></tr>
+<tr>
+<td>Crab's</td>
+<td>19</td>
+<td>-</td>
+<td>15–23</td>
+<td>-</td>
+<td>8–9
+</td></tr>
+<tr>
+<td>Moth's</td>
+<td>19</td>
+<td>-</td>
+<td>-</td>
+<td>15–23</td>
+<td>8–9
+</td></tr>
+<tr>
+<td>Boggart's</td>
+<td>30</td>
+<td>24–32</td>
+<td>-</td>
+<td>-</td>
+<td>10–11
+</td></tr>
+<tr>
+<td>Armadillo's</td>
+<td>30</td>
+<td>-</td>
+<td>24–32</td>
+<td>-</td>
+<td>10–11
+</td></tr>
+<tr>
+<td>Butterfly's</td>
+<td>30</td>
+<td>-</td>
+<td>-</td>
+<td>24–32</td>
+<td>10–11
+</td></tr>
+<tr>
+<td>Naga's</td>
+<td>44</td>
+<td>33–41</td>
+<td>-</td>
+<td>-</td>
+<td>12–13
+</td></tr>
+<tr>
+<td>Rhino's</td>
+<td>44</td>
+<td>-</td>
+<td>33–41</td>
+<td>-</td>
+<td>12–13
+</td></tr>
+<tr>
+<td>Wasp's</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>33–41</td>
+<td>12–13
+</td></tr>
+<tr>
+<td>Djinn's</td>
+<td>60</td>
+<td>42–50</td>
+<td>-</td>
+<td>-</td>
+<td>14–15
+</td></tr>
+<tr>
+<td>Elephant's</td>
+<td>60</td>
+<td>-</td>
+<td>42–50</td>
+<td>-</td>
+<td>14–15
+</td></tr>
+<tr>
+<td>Dragonfly's</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>42–50</td>
+<td>14–15
+</td></tr>
+<tr>
+<td>Seraphim's</td>
+<td>78</td>
+<td>51–56</td>
+<td>-</td>
+<td>-</td>
+<td>16–17
+</td></tr>
+<tr>
+<td>Mammoth's</td>
+<td>78</td>
+<td>-</td>
+<td>51–56</td>
+<td>-</td>
+<td>16–17
+</td></tr>
+<tr>
+<td>Hummingbird's</td>
+<td>78</td>
+<td>-</td>
+<td>-</td>
+<td>51–56</td>
+<td>16–17
+</td></tr></table>
+<h3><span class="mw-headline" id="Item_Acquisition">Item Acquisition</span></h3>
+<p>Can appear on any item except <a href="/Body_armour" title="Body armour">body armour</a> and <a href="/Weapon" title="Weapon">weapons</a>. There are also <a href="/Item_Affix#Item_Acquisition_2" title="Item Affix" class="mw-redirect">suffixes</a> that give rarity.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th class="unsortable">Prefix
+</th>
+<th> Level
+</th>
+<th> Base Item Found Rarity +%
+</th></tr>
+<tr>
+<td> Magpie's</td>
+<td>20</td>
+<td>8–12
+</td></tr>
+<tr>
+<td> Pirate's</td>
+<td>39</td>
+<td>13–18
+</td></tr>
+<tr>
+<td> Dragon's</td>
+<td>62</td>
+<td>19–24
+</td></tr>
+<tr>
+<td> Perandus'</td>
+<td>84</td>
+<td>25-28
+</td></tr></table>
+<h3><span class="mw-headline" id="Life">Life</span></h3>
+<p>Can appear on any item.
+</p>
+<table class="wikitable sortable" style="width: 25%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Base Maximum Life
+</th></tr>
+<tr>
+<td> Hale</td>
+<td>1</td>
+<td>3-9
+</td></tr>
+<tr>
+<td> Healthy</td>
+<td>5</td>
+<td>10–19
+</td></tr>
+<tr>
+<td> Sanguine</td>
+<td>11</td>
+<td>20–29
+</td></tr>
+<tr>
+<td> Stalwart</td>
+<td>18</td>
+<td>30–39
+</td></tr>
+<tr>
+<td> Stout</td>
+<td>24</td>
+<td>40–49
+</td></tr>
+<tr>
+<td> Robust</td>
+<td>30</td>
+<td>50–59
+</td></tr>
+<tr>
+<td> Rotund</td>
+<td>36</td>
+<td>60–69
+</td></tr>
+<tr>
+<td> Virile</td>
+<td>44</td>
+<td>70–79
+</td></tr>
+<tr>
+<td> Athlete's¹</td>
+<td>54</td>
+<td>80–89
+</td></tr>
+<tr>
+<td> Fecund</td>
+<td>64</td>
+<td>90–99
+</td></tr>
+<tr>
+<td> Vigorous² </td>
+<td> 73 </td>
+<td> 100–109
+</td></tr>
+<tr>
+<td> Rapturous³ </td>
+<td> 81 </td>
+<td> 110-119
+</td></tr></table>
+<p>¹ - Amulet tier limit
+</p><p>² - Shields tier limit
+</p><p>³ - Body armor tier limit
+</p>
+<h3><span class="mw-headline" id="Life_Leech">Life Leech</span></h3>
+<p>Can appear on <a href="/Weapon" title="Weapon">weapons</a>, <a href="/Ring" title="Ring">rings</a>, <a href="/Amulet" title="Amulet">amulets</a>, and <a href="/Gloves" title="Gloves">gloves</a>.
+</p>
+<table class="wikitable" style="width: 30%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Life Leech From Physical Attack Damage&#160;%
+</th></tr>
+<tr>
+<td> Remora's</td>
+<td>50</td>
+<td> 0,2-0,4
+</td></tr>
+<tr>
+<td> Lamprey's</td>
+<td>60</td>
+<td> 0,6-0,8
+</td></tr>
+<tr>
+<td> Vampire's</td>
+<td> 70 </td>
+<td> 1-1,2
+</td></tr></table>
+<h3><span class="mw-headline" id="Mana">Mana</span></h3>
+<p>Can appear on any item except <a href="/Belt" title="Belt">belts</a>. 
+</p>
+<table class="wikitable" style="width: 20%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Base Maximum Mana
+</th></tr>
+<tr>
+<td> Beryl</td>
+<td>1</td>
+<td>15–19
+</td></tr>
+<tr>
+<td> Cobalt</td>
+<td>11</td>
+<td>20–24
+</td></tr>
+<tr>
+<td> Azure</td>
+<td>17</td>
+<td>25–29
+</td></tr>
+<tr>
+<td> Sapphire</td>
+<td>23</td>
+<td>30–34
+</td></tr>
+<tr>
+<td> Cerulean</td>
+<td>29</td>
+<td>35–39
+</td></tr>
+<tr>
+<td> Aqua</td>
+<td>35</td>
+<td>40–44
+</td></tr>
+<tr>
+<td> Opalescent</td>
+<td>42</td>
+<td>45–49
+</td></tr>
+<tr>
+<td> Gentian</td>
+<td>51</td>
+<td>50–54
+</td></tr>
+<tr>
+<td> Chalybeous</td>
+<td>60</td>
+<td>55–59
+</td></tr>
+<tr>
+<td> Mazarine</td>
+<td>69</td>
+<td>60–64
+</td></tr>
+<tr>
+<td> Blue </td>
+<td>75 </td>
+<td> 65–68
+</td></tr>
+<tr>
+<td> Zaffre </td>
+<td>81 </td>
+<td> 69–73
+</td></tr></table>
+<h3><span class="mw-headline" id="Mana_Leech">Mana Leech</span></h3>
+<p>Can appear on <a href="/Weapon" title="Weapon">weapons</a>, <a href="/Ring" title="Ring">rings</a>, <a href="/Amulet" title="Amulet">amulets</a>, and <a href="/Gloves" title="Gloves">gloves</a>. 
+</p>
+<table class="wikitable" style="width: 15%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Mana Leech From Physical Attack Damage&#160;%
+</th></tr>
+<tr>
+<td> Thirsty</td>
+<td>50</td>
+<td>0,2-0,4
+</td></tr>
+<tr>
+<td> Parched</td>
+<td>70</td>
+<td>0,6-0,8
+</td></tr></table>
+<h3><span class="mw-headline" id="Movement_Velocity">Movement Velocity</span></h3>
+<p>Appears only on <a href="/Boots" title="Boots">boots</a>.
+</p>
+<table class="wikitable" style="width: 20%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Base Movement Velocity +%
+</th></tr>
+<tr>
+<td> Runner's</td>
+<td>1</td>
+<td>10
+</td></tr>
+<tr>
+<td> Sprinter's</td>
+<td>15</td>
+<td>15
+</td></tr>
+<tr>
+<td> Stallion's</td>
+<td>30</td>
+<td>20
+</td></tr>
+<tr>
+<td> Gazelle's</td>
+<td>40</td>
+<td>25
+</td></tr>
+<tr>
+<td> Cheetah's</td>
+<td>55</td>
+<td>30
+</td></tr></table>
+<h3><span class="mw-headline" id="Spell_Damage">Spell Damage</span></h3>
+<p>Can appear on <a href="/Amulet" title="Amulet">amulets</a>.
+</p>
+<table class="wikitable" style="width: 25%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Spell Damage +%
+</th></tr>
+<tr>
+<td> Chanter's</td>
+<td>5</td>
+<td>3–7
+</td></tr>
+<tr>
+<td> Mage's</td>
+<td>20</td>
+<td>8–12
+</td></tr>
+<tr>
+<td> Sorceror's</td>
+<td>38</td>
+<td>13–17
+</td></tr>
+<tr>
+<td> Thaumaturgist's</td>
+<td>56</td>
+<td>18–22
+</td></tr>
+<tr>
+<td> Wizard's</td>
+<td>76</td>
+<td>23–26
+</td></tr></table>
+<h3><span class="mw-headline" id="One_Handed_Spell_Damage">One Handed Spell Damage</span></h3>
+<p>Limited to <a href="/Mace#Sceptres" title="Mace">sceptres</a>, <a href="/Wand" title="Wand">wands</a>, <a href="/Dagger" title="Dagger">daggers</a>, and <a href="/Spirit_shield" title="Spirit shield" class="mw-redirect">spirit shields</a>.
+</p>
+<table class="wikitable" style="width: 30%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Spell Damage +%
+</th></tr>
+<tr>
+<td> Apprentice's</td>
+<td>2</td>
+<td>10–19
+</td></tr>
+<tr>
+<td> Adept's</td>
+<td>11</td>
+<td>20–29
+</td></tr>
+<tr>
+<td> Scholar's</td>
+<td>23</td>
+<td>30–39
+</td></tr>
+<tr>
+<td> Professor's</td>
+<td>35</td>
+<td>40–49
+</td></tr>
+<tr>
+<td> Occultist's</td>
+<td>46</td>
+<td>50–59
+</td></tr>
+<tr>
+<td> Incanter's</td>
+<td>58</td>
+<td>60–69
+</td></tr>
+<tr>
+<td> Glyphic</td>
+<td>79</td>
+<td>70–74
+</td></tr>
+<tr>
+<td> Runic</td>
+<td>84</td>
+<td>75-79
+</td></tr></table>
+<h3><span class="mw-headline" id="One_Handed_Spell_Damage_and_Mana">One Handed Spell Damage and Mana</span></h3>
+<p>Limited to <a href="/Sceptre" title="Sceptre" class="mw-redirect">sceptres</a>, <a href="/Wand" title="Wand">wands</a>, <a href="/Dagger" title="Dagger">daggers</a>, and <a href="/Spirit_shield" title="Spirit shield" class="mw-redirect">spirit shields</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Spell Damage +%
+</th>
+<th> Base Maximum Mana
+</th></tr>
+<tr>
+<td>Caster's</td>
+<td>2</td>
+<td>5–9</td>
+<td>8–10
+</td></tr>
+<tr>
+<td>Magician's</td>
+<td>11</td>
+<td>10–14</td>
+<td>11–13
+</td></tr>
+<tr>
+<td>Wizard's</td>
+<td>23</td>
+<td>15–19</td>
+<td>14–16
+</td></tr>
+<tr>
+<td>Warlock's</td>
+<td>35</td>
+<td>20–24</td>
+<td>17–19
+</td></tr>
+<tr>
+<td>Mage's</td>
+<td>46</td>
+<td>25–29</td>
+<td>20–22
+</td></tr>
+<tr>
+<td>Archmage's</td>
+<td>58</td>
+<td>30–34</td>
+<td>23–25
+</td></tr>
+<tr>
+<td>Lich's</td>
+<td>80</td>
+<td>35-39</td>
+<td>26-28
+</td></tr></table>
+<h3><span class="mw-headline" id="Staff_Spell_Damage">Staff Spell Damage</span></h3>
+<table class="wikitable" style="width: 30%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Spell Damage +%
+</th></tr>
+<tr>
+<td> Apprentice's</td>
+<td>2</td>
+<td>15–29
+</td></tr>
+<tr>
+<td> Adept's</td>
+<td>11</td>
+<td>30–44
+</td></tr>
+<tr>
+<td> Scholar's</td>
+<td>23</td>
+<td>45–59
+</td></tr>
+<tr>
+<td> Professor's</td>
+<td>35</td>
+<td>60–74
+</td></tr>
+<tr>
+<td> Occultist's</td>
+<td>46</td>
+<td>75–89
+</td></tr>
+<tr>
+<td> Incanter's</td>
+<td>58</td>
+<td>90–104
+</td></tr>
+<tr>
+<td> Glyphic</td>
+<td>79</td>
+<td>105–110
+</td></tr>
+<tr>
+<td> Runic</td>
+<td>84</td>
+<td>111-115
+</td></tr></table>
+<h3><span class="mw-headline" id="Staff_Spell_Damage_and_Mana">Staff Spell Damage and Mana</span></h3>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Spell Damage +%
+</th>
+<th> Base Maximum Mana
+</th></tr>
+<tr>
+<td>Caster's</td>
+<td>2</td>
+<td>8-14</td>
+<td>8–10
+</td></tr>
+<tr>
+<td>Magician's</td>
+<td>11</td>
+<td>15–22</td>
+<td>11–13
+</td></tr>
+<tr>
+<td>Wizard's</td>
+<td>23</td>
+<td>23-29</td>
+<td>14–16
+</td></tr>
+<tr>
+<td>Warlock's</td>
+<td>35</td>
+<td>30-37</td>
+<td>17–19
+</td></tr>
+<tr>
+<td>Mage's</td>
+<td>46</td>
+<td>38-44</td>
+<td>20–22
+</td></tr>
+<tr>
+<td>Archmage's</td>
+<td>58</td>
+<td>45–50</td>
+<td>23–25
+</td></tr>
+<tr>
+<td>Lich's</td>
+<td>80</td>
+<td>51-55</td>
+<td>26-28
+</td></tr></table>
+<h3><span class="mw-headline" id="Weapon_Elemental_Damage">Weapon Elemental Damage</span></h3>
+<p>Can appear on any item except body armours. 
+</p>
+<table class="wikitable" style="width: 30%; text-align: center">
+<tr>
+<th> Prefix
+</th>
+<th> Level
+</th>
+<th> Weapon Elemental Damage +%
+</th></tr>
+<tr>
+<td> Catalyzing</td>
+<td>4</td>
+<td>5–10
+</td></tr>
+<tr>
+<td> Infusing</td>
+<td>15</td>
+<td>11–20
+</td></tr>
+<tr>
+<td> Empowering</td>
+<td>30</td>
+<td>21–30
+</td></tr>
+<tr>
+<td> Unleashed</td>
+<td>75</td>
+<td>31–36
+</td></tr>
+<tr>
+<td> Overpowering</td>
+<td>81</td>
+<td>37-42
+</td></tr></table>
+<h2><span class="mw-headline" id="Suffixes">Suffixes</span></h2>
+<h3><span class="mw-headline" id="Accuracy">Accuracy</span></h3>
+<p>Appears on all equipment except <a href="/Belts" title="Belts" class="mw-redirect">belts</a> and body armours. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Accuracy Rating
+</th>
+<th> Local Accuracy Rating
+</th>
+<th> Light Radius +%
+</th></tr>
+<tr>
+<td> of Calm </td>
+<td> 1 </td>
+<td> 5–15</td>
+<td>5–15 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Steadiness</td>
+<td>12 </td>
+<td> 16–60</td>
+<td> 16–60 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Accuracy</td>
+<td> 20</td>
+<td> 61–100</td>
+<td>61–100 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Precision</td>
+<td>26 </td>
+<td> 101–130</td>
+<td>101–130 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Sniper</td>
+<td>33 </td>
+<td> 131–165</td>
+<td>131–165 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Marksman </td>
+<td>41 </td>
+<td> 166–200</td>
+<td>166–200 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Deadeye</td>
+<td>50 </td>
+<td>201–250</td>
+<td>201–250 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Ranger </td>
+<td> 63</td>
+<td>  251–320</td>
+<td>251–320 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Assassin </td>
+<td> 76</td>
+<td>  321–400</td>
+<td>321–400 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Shining</td>
+<td> 8 </td>
+<td> 10-20 </td>
+<td> </td>
+<td> 5
+</td></tr>
+<tr>
+<td> of Light</td>
+<td> 15 </td>
+<td> 21-40 </td>
+<td> </td>
+<td> 10
+</td></tr>
+<tr>
+<td> of Radiance</td>
+<td> 30 </td>
+<td> 5-10% </td>
+<td> </td>
+<td> 15
+</td></tr></table>
+<h3><span class="mw-headline" id="Attack_Speed">Attack Speed</span></h3>
+<p>Use local attack speed for weapons and global attack speed for other items. Does not appear on <a href="/Belts" title="Belts" class="mw-redirect">belts</a>. 
+</p><p>Bows can only spawn attack speed mods up to "of Renown".
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Global Attack Speed +%
+</th>
+<th> Local Attack Speed +%
+</th></tr>
+<tr>
+<td> of Skill</td>
+<td>1</td>
+<td>5–7</td>
+<td>6–9
+</td></tr>
+<tr>
+<td> of Ease</td>
+<td>11</td>
+<td>8–10</td>
+<td>5–10
+</td></tr>
+<tr>
+<td> of Mastery</td>
+<td>22</td>
+<td>11–13</td>
+<td>11–13
+</td></tr>
+<tr>
+<td> of Renown</td>
+<td>30</td>
+<td>-</td>
+<td>14–16
+</td></tr>
+<tr>
+<td> of Acclaim</td>
+<td>37</td>
+<td>-</td>
+<td>17–19
+</td></tr>
+<tr>
+<td> of Fame</td>
+<td>45</td>
+<td>-</td>
+<td>20–22
+</td></tr>
+<tr>
+<td> of Infamy</td>
+<td>60</td>
+<td>-</td>
+<td>23–25
+</td></tr>
+<tr>
+<td> of Grandmastery </td>
+<td> 76 </td>
+<td> 14–16 </td>
+<td> -
+</td></tr>
+<tr>
+<td>of Celebration </td>
+<td> 77 </td>
+<td> - </td>
+<td> 26–27
+</td></tr></table>
+<h3><span class="mw-headline" id="Attribute_Increase">Attribute Increase</span></h3>
+<p>Found on all equipment.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th scope="col" class="unsortable">Suffix
+</th>
+<th> Level
+</th>
+<th> Additional All Attributes
+</th>
+<th> Additional Dexterity
+</th>
+<th> Additional Intelligence
+</th>
+<th> Additional Strength
+</th></tr>
+<tr>
+<td> of the Clouds</td>
+<td>1</td>
+<td>1–4</td>
+<td>-</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Mongoose</td>
+<td>1</td>
+<td>-</td>
+<td>8–12</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Pupil</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>8–12 </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Brute</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>8–12
+</td></tr>
+<tr>
+<td> of the Sky</td>
+<td>11</td>
+<td>5–8</td>
+<td>- </td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Lynx</td>
+<td>11</td>
+<td>-</td>
+<td>13–17</td>
+<td> -</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Student</td>
+<td>11</td>
+<td>-</td>
+<td>-</td>
+<td>13–17</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Wrestler</td>
+<td>11</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>13–17
+</td></tr>
+<tr>
+<td> of the Meteor</td>
+<td>22</td>
+<td>9–12</td>
+<td>- </td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Fox</td>
+<td>22</td>
+<td>-</td>
+<td>18–22</td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Prodigy</td>
+<td>22</td>
+<td>-</td>
+<td>-</td>
+<td>18–22</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Bear</td>
+<td>22</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>18–22
+</td></tr>
+<tr>
+<td> of the Comet</td>
+<td>33</td>
+<td>13–16</td>
+<td>- </td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Falcon</td>
+<td>33</td>
+<td>-</td>
+<td>23–27</td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Augur</td>
+<td>33</td>
+<td>-</td>
+<td>-</td>
+<td>23–27</td>
+<td>
+</td></tr>
+<tr>
+<td> of the Lion</td>
+<td>33</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>23–27
+</td></tr>
+<tr>
+<td> of the Heavens</td>
+<td>44</td>
+<td>17–20</td>
+<td>- </td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Panther</td>
+<td>44</td>
+<td>-</td>
+<td>28–32</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Philosopher</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>28–32</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Gorilla</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>28–32
+</td></tr>
+<tr>
+<td> of the Galaxy</td>
+<td>55</td>
+<td>21–24</td>
+<td> -</td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Leopard</td>
+<td>55</td>
+<td>-</td>
+<td>33–37</td>
+<td> -</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Sage</td>
+<td>55</td>
+<td>-</td>
+<td>-</td>
+<td>33–37</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Goliath</td>
+<td>55</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>33–37
+</td></tr>
+<tr>
+<td> of the Universe</td>
+<td>66</td>
+<td>25–28</td>
+<td> -</td>
+<td>- </td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Jaguar</td>
+<td>66</td>
+<td>-</td>
+<td>38–42</td>
+<td> -</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Savant</td>
+<td>66</td>
+<td>-</td>
+<td>-</td>
+<td>38–42</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Leviathan</td>
+<td>66</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>38–42
+</td></tr>
+<tr>
+<td> of the Phantasm </td>
+<td> 74 </td>
+<td> - </td>
+<td>43–50</td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Virtuoso </td>
+<td> 74 </td>
+<td> -  </td>
+<td> - </td>
+<td> 43–50</td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Titan </td>
+<td> 74 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 43–50
+</td></tr>
+<tr>
+<td> of the Infinite 	</td>
+<td> 77 </td>
+<td> 29–32 </td>
+<td>- </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Wind </td>
+<td> 82 </td>
+<td> - </td>
+<td> 51-55 </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Genius </td>
+<td> 82 </td>
+<td> - </td>
+<td> - </td>
+<td> 51-55 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Gods </td>
+<td> 82 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 51-55
+</td></tr></table>
+<h3><span class="mw-headline" id="Cast_Speed">Cast Speed</span></h3>
+<p>Can appear on <a href="/Sceptre" title="Sceptre" class="mw-redirect">sceptres</a>, <a href="/Wand" title="Wand">wands</a>, <a href="/Staves" title="Staves" class="mw-redirect">staves</a>, <a href="/Ring" title="Ring">rings</a>, and <a href="/Amulet" title="Amulet">amulets</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Base Cast Speed +%
+</th></tr>
+<tr>
+<td> of Talent</td>
+<td>2</td>
+<td>5–7
+</td></tr>
+<tr>
+<td> of Nimbleness</td>
+<td>15</td>
+<td>8–10
+</td></tr>
+<tr>
+<td> of Expertise</td>
+<td>30</td>
+<td>11–13
+</td></tr>
+<tr>
+<td> of Legerdemain</td>
+<td>40</td>
+<td>14–16
+</td></tr>
+<tr>
+<td> of Prestidigitation</td>
+<td>55</td>
+<td>17–19
+</td></tr>
+<tr>
+<td> of Sortilege </td>
+<td> 72 </td>
+<td> 20–22
+</td></tr>
+<tr>
+<td> of Finesse </td>
+<td> 83 </td>
+<td> 23-25
+</td></tr></table>
+<h3><span class="mw-headline" id="Critical_Strike">Critical Strike</span></h3>
+<p>Local critical chance can only appear on <a href="/Weapons" title="Weapons" class="mw-redirect">weapons</a>. Global critical chance can appear on <a href="/Quiver" title="Quiver">quivers</a> and <a href="/Amulet" title="Amulet">amulets</a>. Global critical multiplier can appear on weapons, amulets, or quivers.
+</p>
+<table class="wikitable sortable" style="width: 60%; text-align: center">
+<tr>
+<th scope="col" class="unsortable">Suffix
+</th>
+<th> Level
+</th>
+<th> Local Critical Strike Chance +%
+</th>
+<th> Global Critical Strike Chance +%
+</th>
+<th> Global Critical Strike Multiplier +%
+</th></tr>
+<tr>
+<td> of Needling</td>
+<td>1</td>
+<td>10–14</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Needling</td>
+<td>5</td>
+<td>-</td>
+<td>10–14</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Ire</td>
+<td>8</td>
+<td>-</td>
+<td>-</td>
+<td>10–14
+</td></tr>
+<tr>
+<td> of Stinging</td>
+<td>20</td>
+<td>15–19</td>
+<td>15–19</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Anger</td>
+<td>21</td>
+<td>-</td>
+<td>-</td>
+<td>15–19
+</td></tr>
+<tr>
+<td> of Piercing</td>
+<td>30</td>
+<td>20–24</td>
+<td>20–24</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Rage</td>
+<td>30</td>
+<td>-</td>
+<td>-</td>
+<td>20-24
+</td></tr>
+<tr>
+<td> of Puncturing</td>
+<td>44</td>
+<td>25–29</td>
+<td>25–29</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Fury</td>
+<td>44</td>
+<td>-</td>
+<td>-</td>
+<td>25-29
+</td></tr>
+<tr>
+<td> of Penetrating</td>
+<td>58</td>
+<td>-</td>
+<td>30–34</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Penetrating</td>
+<td>59</td>
+<td>30-34</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Ferocity</td>
+<td>59</td>
+<td>-</td>
+<td>-</td>
+<td>30–34
+</td></tr>
+<tr>
+<td> of Incision</td>
+<td>72</td>
+<td>35–38</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Incision</td>
+<td>73</td>
+<td>-</td>
+<td>35–38</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Destruction</td>
+<td>73</td>
+<td>-</td>
+<td>-</td>
+<td>35-38
+</td></tr></table>
+<h3><span class="mw-headline" id="Spell_Critical_Strike">Spell Critical Strike</span></h3>
+<p>Can appear on <a href="/Spirit_shield" title="Spirit shield" class="mw-redirect">spirit shields</a>, <a href="/Wand" title="Wand">wands</a>, <a href="/Dagger" title="Dagger">daggers</a>, <a href="/Sceptre" title="Sceptre" class="mw-redirect">sceptres</a>, and <a href="/Staves" title="Staves" class="mw-redirect">staves</a>.
+</p>
+<table class="wikitable sortable" style="width: 60%; text-align: center">
+<tr>
+<th scope="col" class="unsortable">Suffix
+</th>
+<th> Level
+</th>
+<th> Spell Critical Strike Chance +%
+</th></tr>
+<tr>
+<td> of Menace</td>
+<td>11</td>
+<td>11–20
+</td></tr>
+<tr>
+<td> of Havoc</td>
+<td>21</td>
+<td>20–39
+</td></tr>
+<tr>
+<td> of Disaster</td>
+<td>28</td>
+<td>40–59
+</td></tr>
+<tr>
+<td> of Calamity</td>
+<td>41</td>
+<td>60–79
+</td></tr>
+<tr>
+<td> of Ruin</td>
+<td>59</td>
+<td>80–99
+</td></tr>
+<tr>
+<td> of Unmaking</td>
+<td>76</td>
+<td>100–109
+</td></tr></table>
+<h3><span class="mw-headline" id="Elemental_Damage_Scaling">Elemental Damage Scaling</span></h3>
+<p>Can appear on <a href="/Ring" title="Ring">rings</a>, <a href="/Amulet" title="Amulet">amulets</a>, <a href="/Staves" title="Staves" class="mw-redirect">staves</a>, <a href="/Wand" title="Wand">wands</a>, and <a href="/Sceptre" title="Sceptre" class="mw-redirect">sceptres</a>. However, only certain affix tiers can appear on certain base item types.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th scope="col" class="unsortable"> Suffix
+</th>
+<th> Level
+</th>
+<th> Cold Damage +%
+</th>
+<th> Fire Damage +%
+</th>
+<th> Lightning Damage +%
+</th></tr>
+<tr>
+<td> of Embers</td>
+<td>8</td>
+<td>-</td>
+<td>3–7</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Sparks</td>
+<td>10</td>
+<td>-</td>
+<td>-</td>
+<td>3–7
+</td></tr>
+<tr>
+<td> of Snow</td>
+<td>12</td>
+<td>3–7</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Coals</td>
+<td>22</td>
+<td>-</td>
+<td>8–12</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Static</td>
+<td>23</td>
+<td>-</td>
+<td>-</td>
+<td>8–12
+</td></tr>
+<tr>
+<td> of Sleet</td>
+<td>24</td>
+<td>8–12</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Ice</td>
+<td>36</td>
+<td>13–17</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Cinders</td>
+<td>36</td>
+<td>-</td>
+<td>13–17</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Electricity</td>
+<td>36</td>
+<td>-</td>
+<td>-</td>
+<td>13–17
+</td></tr>
+<tr>
+<td> of Rime</td>
+<td>50</td>
+<td>18–22</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Flames</td>
+<td>50</td>
+<td>-</td>
+<td>18–22</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Voltage</td>
+<td>50</td>
+<td>-</td>
+<td>-</td>
+<td>18–22
+</td></tr>
+<tr>
+<td> of Floe</td>
+<td>64</td>
+<td>23–26</td>
+<td>-</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Immolation</td>
+<td>64</td>
+<td>-</td>
+<td>23–26</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Discharge</td>
+<td>64</td>
+<td>-</td>
+<td>-</td>
+<td>23–26
+</td></tr>
+<tr>
+<td> of Arcing </td>
+<td> 76 </td>
+<td> - </td>
+<td> - </td>
+<td> 27–30
+</td></tr>
+<tr>
+<td> of Glaciation </td>
+<td> 76 </td>
+<td> 27–30 </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Ashes </td>
+<td> 76 </td>
+<td> - </td>
+<td> 27–30 </td>
+<td> -
+</td></tr></table>
+<h3><span class="mw-headline" id="Flask_2">Flask</span></h3>
+<p>Flasks cannot be rare, only magic.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Stat
+</th>
+<th> Value
+</th></tr>
+<tr>
+<td> of Resistance</td>
+<td>1</td>
+<td><a href="/Resistances" title="Resistances" class="mw-redirect">Resistances</a> +% During Flask Effect</td>
+<td>20–30
+</td></tr>
+<tr>
+<td> of Steadiness</td>
+<td>1</td>
+<td><a href="/Stun" title="Stun">Stun</a> Recovery +% During Flask Effect</td>
+<td>40–60
+</td></tr>
+<tr>
+<td> of Heat</td>
+<td>4</td>
+<td>Removes <a href="/Freeze" title="Freeze">Freeze</a> And <a href="/Chill" title="Chill">Chill</a> On Use and During Flask Effect</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Adrenaline</td>
+<td>5</td>
+<td>Movement Speed +% During Flask Effect</td>
+<td>20–30
+</td></tr>
+<tr>
+<td> of Iron Skin</td>
+<td>6</td>
+<td><a href="/Armour" title="Armour">Armour</a> +% During Flask Effect</td>
+<td>60–100
+</td></tr>
+<tr>
+<td> of Dousing</td>
+<td>6</td>
+<td>Removes <a href="/Burning" title="Burning">Burning</a> On Use and During Flask Effect</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Reflexes</td>
+<td>8</td>
+<td><a href="/Evasion" title="Evasion">Evasion</a> +% During Flask Effect</td>
+<td>60–100
+</td></tr>
+<tr>
+<td> of Staunching</td>
+<td>8</td>
+<td>Removes <a href="/Bleed" title="Bleed">Bleeding</a> On Use and During Flask Effect</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Fending</td>
+<td>9</td>
+<td>Adds <a href="/Knockback" title="Knockback">Knockback</a> to Melee Attacks During Flask Effect</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Gluttony</td>
+<td>10</td>
+<td><a href="/Life#Life_Leech" title="Life">Life Leech</a>&#160;% During Flask Effect</td>
+<td>2
+</td></tr>
+<tr>
+<td> of Animation</td>
+<td>10</td>
+<td><a href="/Minion" title="Minion">Minion</a> Heal&#160;% On Use and During Flask Effect</td>
+<td>40–60
+</td></tr>
+<tr>
+<td> of Grounding</td>
+<td>10</td>
+<td>Removes <a href="/Shock" title="Shock">Shock</a> On Use and During Flask Effect</td>
+<td>-
+</td></tr>
+<tr>
+<td> of Craving</td>
+<td>12</td>
+<td><a href="/Mana#Mana_Leech" title="Mana">Mana Leech</a>&#160;% During Flask Effect</td>
+<td>2
+</td></tr>
+<tr>
+<td> of Warding</td>
+<td>18?</td>
+<td>Removes <a href="/Curse" title="Curse">Curses</a> On Use and During Flask Effect</td>
+<td>-
+</td></tr></table>
+<h3><span class="mw-headline" id="Flask_Effects_2">Flask Effects</span></h3>
+<p>Can be found on <a href="/Belt" title="Belt">belts</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Stat
+</th>
+<th> Value
+</th></tr>
+<tr>
+<td> of Refilling</td>
+<td>2</td>
+<td>Charges Gained +%</td>
+<td>10–20
+</td></tr>
+<tr>
+<td> of Sipping</td>
+<td>3</td>
+<td>Flask Charges Used +%</td>
+<td>-20 to -10
+</td></tr>
+<tr>
+<td> of Savouring</td>
+<td>7</td>
+<td>Flask Duration +%</td>
+<td>10–20
+</td></tr></table>
+<h3><span class="mw-headline" id="Item_Acquisition_2">Item Acquisition</span></h3>
+<p>There are also <a href="/Item_Affix#Item_Acquisition" title="Item Affix" class="mw-redirect">prefixes</a> that give item rarity.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th scope="col" class="unsortable">Suffix
+</th>
+<th> Level
+</th>
+<th> Base Item Found Rarity
+</th></tr>
+<tr>
+<td> of Plunder</td>
+<td> 3 </td>
+<td> 6–10
+</td></tr>
+<tr>
+<td> of Raiding</td>
+<td> 30 </td>
+<td> 11–14
+</td></tr>
+<tr>
+<td> of Archaeology</td>
+<td> 53 </td>
+<td> 15–20
+</td></tr>
+<tr>
+<td> of Excavation </td>
+<td> 75 </td>
+<td> 21–26
+</td></tr></table>
+<h3><span class="mw-headline" id="Life_Gain_on_Attack_Hit">Life Gain on Attack Hit</span></h3>
+<p>Can appear on <a href="/Weapons" title="Weapons" class="mw-redirect">weapons</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Ring" title="Ring">rings</a>, and <a href="/Amulet" title="Amulet">amulets</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Life Gain Per Target
+</th></tr>
+<tr>
+<td> of Rejuvenation</td>
+<td>8</td>
+<td>2
+</td></tr>
+<tr>
+<td> of Restoration</td>
+<td>20</td>
+<td>3
+</td></tr>
+<tr>
+<td> of Regrowth</td>
+<td>30</td>
+<td>4
+</td></tr>
+<tr>
+<td> of Nourishment</td>
+<td>40</td>
+<td>5
+</td></tr></table>
+<h3><span class="mw-headline" id="Life_Gained_on_Enemy_Death">Life Gained on Enemy Death</span></h3>
+<p>Can appear on <a href="/Weapons" title="Weapons" class="mw-redirect">weapons</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Ring" title="Ring">rings</a>, and <a href="/Amulet" title="Amulet">amulets</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Life Gained on Enemy Death
+</th></tr>
+<tr>
+<td> of Success</td>
+<td>1</td>
+<td>2–4
+</td></tr>
+<tr>
+<td> of Victory</td>
+<td>23</td>
+<td>5–7
+</td></tr>
+<tr>
+<td> of Triumph</td>
+<td>40</td>
+<td>8–11
+</td></tr></table>
+<h3><span class="mw-headline" id="Life_Regeneration">Life Regeneration</span></h3>
+<p>Can appear on any item.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Base Life Regeneration Rate Per Second
+</th></tr>
+<tr>
+<td> of the Newt</td>
+<td>1</td>
+<td>1-2
+</td></tr>
+<tr>
+<td> of the Lizard</td>
+<td>18</td>
+<td>2-3
+</td></tr>
+<tr>
+<td> of the Starfish</td>
+<td>30</td>
+<td>3-4
+</td></tr>
+<tr>
+<td> of the Hydra</td>
+<td>44</td>
+<td>4-5
+</td></tr>
+<tr>
+<td> of the Troll</td>
+<td>59</td>
+<td>5-6
+</td></tr>
+<tr>
+<td> of the Phoenix</td>
+<td>78</td>
+<td>6-7
+</td></tr></table>
+<h3><span class="mw-headline" id="Mana_Gained_on_Enemy_Death">Mana Gained on Enemy Death</span></h3>
+<p>Can appear on any item except <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Mana Gained on Enemy Death
+</th></tr>
+<tr>
+<td> of Absorption</td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td> of Osmosis</td>
+<td>24</td>
+<td>2–3
+</td></tr>
+<tr>
+<td> of Consumption</td>
+<td>40</td>
+<td>4–6
+</td></tr></table>
+<h3><span class="mw-headline" id="Mana_Regeneration">Mana Regeneration</span></h3>
+<p>Can appear on <a href="/Ring" title="Ring">rings</a>, <a href="/Amulet" title="Amulet">amulets</a>, <a href="/Wand" title="Wand">wands</a>, <a href="/Dagger" title="Dagger">daggers</a>, <a href="/Sceptre" title="Sceptre" class="mw-redirect">sceptres</a>, <a href="/Staves" title="Staves" class="mw-redirect">staves</a>, and <a href="/Spirit_shield" title="Spirit shield" class="mw-redirect">spirit shields</a>.
+</p><p>Note: The base <a href="/Mana" title="Mana">mana</a> regen rate is 1.75% of maximum mana per second.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Mana Regeneration Rate +%
+</th></tr>
+<tr>
+<td> of Excitement</td>
+<td>2</td>
+<td>10–19
+</td></tr>
+<tr>
+<td> of Joy</td>
+<td>18</td>
+<td>20–29
+</td></tr>
+<tr>
+<td> of Elation</td>
+<td>29</td>
+<td>30–39
+</td></tr>
+<tr>
+<td> of Bliss</td>
+<td>42</td>
+<td>40–49
+</td></tr>
+<tr>
+<td> of Euphoria</td>
+<td>55</td>
+<td>50–59
+</td></tr>
+<tr>
+<td> of Nirvana </td>
+<td> 79 </td>
+<td> 60–69
+</td></tr></table>
+<h3><span class="mw-headline" id="Projectile_Speed">Projectile Speed</span></h3>
+<p>Can appear on <a href="/Bow" title="Bow">bows</a>, <a href="/Wand" title="Wand">wands</a>, and <a href="/Quiver" title="Quiver">quivers</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Projectile Speed +%
+</th></tr>
+<tr>
+<td> of Darting</td>
+<td>14</td>
+<td>10–17
+</td></tr>
+<tr>
+<td> of Flight</td>
+<td>27</td>
+<td>18-25
+</td></tr>
+<tr>
+<td> of Propulsion</td>
+<td>41</td>
+<td>26-33
+</td></tr>
+<tr>
+<td> of the Zephyr</td>
+<td>55</td>
+<td>34-41
+</td></tr>
+<tr>
+<td> of the Gale</td>
+<td>82</td>
+<td>42-46
+</td></tr></table>
+<h3><span class="mw-headline" id="Reduced_Attribute_Requirements">Reduced Attribute Requirements</span></h3>
+<p>Can appear on any item with attribute requirements. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Local Attribute Requirements +%
+</th></tr>
+<tr>
+<td> of the Worthy</td>
+<td>36</td>
+<td>-18
+</td></tr>
+<tr>
+<td> of the Apt</td>
+<td>60</td>
+<td>-32
+</td></tr></table>
+<h3><span class="mw-headline" id="Resistance">Resistance</span></h3>
+<p>Can appear on any item.
+</p>
+<table class="wikitable sortable" style="width: 50%; text-align: center">
+<tr>
+<th scope="col" class="unsortable" width="20%">Suffix
+</th>
+<th> Level
+</th>
+<th> Base Cold Damage Resist&#160;%
+</th>
+<th> Base Fire Damage Resist&#160;%
+</th>
+<th> Base Lightning Resist&#160;%
+</th>
+<th>Base Resist All Elements
+</th>
+<th> Base Chaos Damage Resistance&#160;%
+</th></tr>
+<tr>
+<td> of the Inuit</td>
+<td>1</td>
+<td>6–11</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Whelpling</td>
+<td>1</td>
+<td>-</td>
+<td>6–11</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Cloud</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>6–11</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Crystal</td>
+<td>12</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>3–5 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Salamander</td>
+<td>12</td>
+<td>-</td>
+<td>12–17</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Squall</td>
+<td>13</td>
+<td>-</td>
+<td>-</td>
+<td>12–17</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Seal</td>
+<td>14</td>
+<td>12–17</td>
+<td>-</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Lost </td>
+<td> 16 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 5–10
+</td></tr>
+<tr>
+<td> of the Drake</td>
+<td>24</td>
+<td>-</td>
+<td>18–23</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Prism</td>
+<td>24</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>6–8 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Storm</td>
+<td>25</td>
+<td>-</td>
+<td>-</td>
+<td>18–23</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Penguin</td>
+<td>26</td>
+<td>18–23</td>
+<td>-</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Banishment </td>
+<td> 30 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 11–15
+</td></tr>
+<tr>
+<td> of the Kiln</td>
+<td>36</td>
+<td>-</td>
+<td>24–29</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Kaleidoscope</td>
+<td>36</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>9–11 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Thunderhead</td>
+<td>37</td>
+<td>-</td>
+<td>-</td>
+<td>24–29</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Yeti</td>
+<td>38</td>
+<td>24–29</td>
+<td>-</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Eviction </td>
+<td> 44 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 16–20
+</td></tr>
+<tr>
+<td> of the Furnace</td>
+<td>48</td>
+<td>-</td>
+<td>30–35</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Variegation</td>
+<td>48</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>12–14 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Tempest</td>
+<td>49</td>
+<td>-</td>
+<td>-</td>
+<td>30–35</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Walrus</td>
+<td>50</td>
+<td>30–35</td>
+<td>-</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Expulsion </td>
+<td> 56  </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 21–25
+</td></tr>
+<tr>
+<td> of the Polar Bear</td>
+<td>60</td>
+<td>36–41</td>
+<td>-</td>
+<td>-</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Volcano</td>
+<td>60</td>
+<td>-</td>
+<td>36–41</td>
+<td>-</td>
+<td> </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Maelstrom</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>36–41</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Rainbow</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>15–16 </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Exile </td>
+<td> 65 </td>
+<td>- </td>
+<td>- </td>
+<td>- </td>
+<td>- </td>
+<td>26–30
+</td></tr>
+<tr>
+<td> of the Ice 	</td>
+<td> 72 </td>
+<td> 42–45 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Magma 	</td>
+<td> 72 </td>
+<td>- </td>
+<td> 42–45 </td>
+<td> -</td>
+<td>- </td>
+<td> -
+</td></tr>
+<tr>
+<td> of the Lightning </td>
+<td> 72 </td>
+<td> -</td>
+<td> - </td>
+<td> 42–45 </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Bameth 	</td>
+<td> 81 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> 31-35
+</td></tr>
+<tr>
+<td> of Haast 	</td>
+<td> 84 </td>
+<td> 46–48 </td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Tzteosh 	</td>
+<td> 84 </td>
+<td> - </td>
+<td> 46-48 </td>
+<td> - </td>
+<td> - </td>
+<td> -
+</td></tr>
+<tr>
+<td> of Ephij 	</td>
+<td> 84 </td>
+<td> - </td>
+<td> - </td>
+<td> 46-48 </td>
+<td> - </td>
+<td> -
+</td></tr></table>
+<h3><span class="mw-headline" id="Shield_Block">Shield Block</span></h3>
+<p>Can only appear on <a href="/Shield" title="Shield">shields</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Local Additional Block Chance&#160;%
+</th></tr>
+<tr>
+<td> of Intercepting </td>
+<td> 10 </td>
+<td> 1–3
+</td></tr>
+<tr>
+<td> of Walling </td>
+<td> 75 </td>
+<td> 4-6
+</td></tr></table>
+<h3><span class="mw-headline" id="Stun">Stun</span></h3>
+<p>Can appear on <a href="/Weapons" title="Weapons" class="mw-redirect">weapons</a> and <a href="/Belt" title="Belt">belts</a>. 
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Base Stun Duration +%
+</th>
+<th> Base Stun Threshold Reduction +%
+</th></tr>
+<tr>
+<td> of Impact</td>
+<td>5</td>
+<td>11–15</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Pugilist</td>
+<td>5</td>
+<td>-</td>
+<td>5–7
+</td></tr>
+<tr>
+<td> of Dazing</td>
+<td>18</td>
+<td>16–20</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Brawler</td>
+<td>20</td>
+<td>-</td>
+<td>8–9
+</td></tr>
+<tr>
+<td> of Stunning</td>
+<td>30</td>
+<td>21–25</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Boxer</td>
+<td>30</td>
+<td>-</td>
+<td>10–11
+</td></tr>
+<tr>
+<td> of Slamming</td>
+<td>44</td>
+<td>26–30</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Combatant</td>
+<td>44</td>
+<td>-</td>
+<td>12–13
+</td></tr>
+<tr>
+<td> of Staggering</td>
+<td>58</td>
+<td>31–35</td>
+<td>-
+</td></tr>
+<tr>
+<td> of the Gladiator</td>
+<td>58</td>
+<td>-</td>
+<td>14–15
+</td></tr></table>
+<h3><span class="mw-headline" id="Stun_Recovery">Stun Recovery</span></h3>
+<p>Can appear on <a href="/Belt" title="Belt">belts</a>, <a href="/Shield" title="Shield">shields</a>, <a href="/Helmets" title="Helmets" class="mw-redirect">helmets</a>, <a href="/Gloves" title="Gloves">gloves</a>, <a href="/Boots" title="Boots">boots</a>, and <a href="/Body_armour" title="Body armour">body armours</a>.
+</p>
+<table class="wikitable" style="width: 50%; text-align: center">
+<tr>
+<th> Suffix
+</th>
+<th> Level
+</th>
+<th> Base Stun Recovery +%
+</th></tr>
+<tr>
+<td> of Thick Skin</td>
+<td>1</td>
+<td>11–13
+</td></tr>
+<tr>
+<td> of Stone Skin</td>
+<td>17</td>
+<td>14–16
+</td></tr>
+<tr>
+<td> of Iron Skin</td>
+<td>28</td>
+<td>17–19
+</td></tr>
+<tr>
+<td> of Steel Skin</td>
+<td>42</td>
+<td>20–22
+</td></tr>
+<tr>
+<td> of Adamantite Skin</td>
+<td>56</td>
+<td>23–25
+</td></tr>
+<tr>
+<td> of Corundum Skin </td>
+<td> 79 </td>
+<td> 26–28
+</td></tr></table>
+<h2><span class="mw-headline" id="Special_affixes">Special affixes</span></h2>
+<p>Modifiers like <a href="/Corrupted" title="Corrupted">Corrupted</a> and <a href="/Mirrored" title="Mirrored">Mirrored</a> don't count towards the maximum of six an item can have. 
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li> <a href="/Vaal_Orb" title="Vaal Orb">Corruption affixes</a>
+</li>
+<li> <a href="/Jewel" title="Jewel">Jewel affixes</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.408 seconds
+Real time usage: 0.433 seconds
+Preprocessor visited node count: 479/1000000
+Preprocessor generated node count: 1121/1000000
+Post‐expand include size: 4616/2097152 bytes
+Template argument size: 134/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/99
+-->
+
+<!-- Saved in parser cache with key pathofexile_gamepedia:pcache:idhash:277-0!*!0!!en!*!* and timestamp 20160119165405 and revision id 177415
+ -->
+</div>												<div class="printfooter">
+						Retrieved from "<a href="http://pathofexile.gamepedia.com/index.php?title=Item_affix&amp;oldid=177415">http://pathofexile.gamepedia.com/index.php?title=Item_affix&amp;oldid=177415</a>"						</div>
+																		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Category:Contents" title="Category:Contents">Category</a>: <ul><li><a href="/Category:Item_mechanics" title="Category:Item mechanics">Item mechanics</a></li></ul></div></div>																		<div class="visualClear"></div>
+											</div>
+					<!-- /bodyContent -->
+				</div>
+				<!-- second ad placement -->
+								<div class="btflb">
+					<div id='cdm-zone-04'></div>				</div>
+								<!-- /second ad placement -->
+			</div>
+			<!-- /content -->
+			<div id="footer" role="contentinfo">
+									<ul id="footer-info">
+													<li id="footer-info-lastmod"> This page was last modified on <time itemprop="datePublished" datetime="2016-04-01T01:33">4 January 2016, at 01:33</time>.</li>
+													<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> unless otherwise noted.  Path of Exile content and materials are trademarks and copyrights of Grinding Gear Games or its licensors. All rights reserved.<br />
+This site is a part of Curse, Inc. and is not affiliated with Grinding Gear Games.</li>
+											</ul>
+									<ul id="footer-places">
+													<li id="footer-places-about"><a href="/Path_of_Exile_Wiki:About" title="Path of Exile Wiki:About">About Path of Exile Wiki</a></li>
+													<li id="footer-places-disclaimer"><a href="/Path_of_Exile_Wiki:General_disclaimer" title="Path of Exile Wiki:General disclaimer">Disclaimers</a></li>
+													<li id="footer-places-mobileview"><a href="//pathofexile.gamepedia.com/index.php?title=Item_affix&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+											</ul>
+													<ul id="footer-icons" class="noprint">
+						<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="CC BY-NC-SA 3.0" width="88" height="31" /></a>
+						</li>
+						<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+							<a href="http://help.gamepedia.com/What_is_Hydra"><img src="/extensions/Curse/Icons/poweredbyhydra.png" alt="Powered by Hydra" width="88" height="31" /></a>
+							<a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="/extensions/SemanticMediaWiki/includes/../resources/images/smw_button.png" alt="Powered by Semantic MediaWiki" width="88" height="31" /></a>
+						</li>
+					</ul>
+								<div style="clear:both"></div>
+			</div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.Social","ext.smw.tooltips","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.vector.collapsibleNav","mw.MwEmbedSupport.style"],null,true);
+}</script>
+<script src="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=hydradark&amp;*"></script>
+<footer id="footer" role="complimentary" >
+	<div class="footer-links">
+				<a href="http://www.gamepedia.com" class="curse">Gamepedia powered by Curse</a>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/CurseGamepedia" class="fb">Facebook</a></li>
+			<li><a href="https://twitter.com/CurseGamepedia" class="tw">Twitter</a></li>
+			<li><a href="https://www.youtube.com/CurseGP" class="yt">Youtube</a></li>
+			<li><a href="http://www.curse.com/newsletter" class="nl">Newsletter</a></li>
+		</ul>
+					<ul class="you">
+									<li><a href="/index.php?title=Special:UserLogin&returnto=Item+affix" id="login-link" class="sign-in">Sign In</a></li>
+									<li><a href="/index.php?title=Special:UserLogin&returnto=Item+affix&type=signup" class="register" id="register-link">Register</a></li>
+										<li><a href="http://www.curseinc.com/careers" class="careers">Careers</a></li>
+			<li><a href="http://support.curse.com" class="help">Help</a></li>
+					</ul>
+			<ul class="more">
+					<li><a href="http://www.curseinc.com/" class="about">About Curse</a></li>
+			<li><a href="http://www.curseinc.com/audience" class="advertise">Advertise</a></li>
+			<li><a href="http://www.curse.com/terms" class="tos">Terms of Service</a></li>
+			<li><a href="http://www.curse.com/privacy" class="privacy-policy">Privacy Policy</a></li>
+		</ul>
+		<span class="copyright">Copyright 2005-2016, Curse Inc.</span>
+	</div>
+			<div class="ad-placement ad-main-med-rect-footer">
+			<div id='cdm-zone-03'></div>		</div>
+	</footer>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(
+        ['_setAccount', 'UA-35871056-26'],
+        ['_setDomainName', 'gamepedia.com'],
+        ['_addIgnoredRef', 'gamepedia.com'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-1045810-22'],
+        ['b._setDomainName', 'gamepedia.com'],
+        ['b._addIgnoredRef', 'gamepedia.com'],
+        ['b._trackPageview'],
+        ['c._setAccount', 'UA-35871056-4'],
+        ['c._setDomainName', 'gamepedia.com'],
+        ['c._addIgnoredRef', 'gamepedia.com'],
+        ['c._trackPageview']
+
+);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Begin Nielsen -->
+<script type="text/javascript">
+(function () {
+	var d = new Image(1, 1);
+	d.onerror = d.onload = function () {
+		d.onerror = d.onload = null;
+	};
+	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+<div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- End Nielsen --><script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":335});
+}</script>
+		<!-- Lotame -->
+<script src="http://tags.crwdcntrl.net/c/3613/cc.js?ns=_cc3613" id="LOTCC_3613"></script>
+<script>
+_cc3613.bcp();
+</script>
+<img src="http://bcp.crwdcntrl.net/5/c=3613" width="1" height="1"/>
+<!-- End Lotame -->
+
+<!--Adblock Check--> 
+<script type="text/javascript" src="http://media.curse.com/Content/Ads/JS/BSAds3.js"></script> <script type="text/javascript"> jQuery(document).ready(checkAds()); function checkAds(){if (document.getElementById('adsense')!=undefined){document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Unblocked', 'false',,true]);</sc" + "ript>");}else{document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Blocked', 'true',,true]);</sc" + "ript>");}} </script>
+ <!--End Adblock Check-->
+<!-- Start PubMP -->
+<script type="text/javascript" src="http://ads.pubmatic.com/AdServer/js/showad.js#PIX&ptask=DSP&SPug=1"></script> 
+<!-- End PubMP -->
+
+<div id='cdm-zone-end'></div>			<script src="http://media-titanium.cursecdn.com/shared-assets/current/anchor.js?id=2757821"></script>
+				<script type="text/javascript">
+			window.genreCategory = 'RPG';
+		</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75f4858b7a","applicationID":"1909498","transactionName":"YlVXbREHWksEUkVdCVsfYEsKSV1WAVRJGhZdQA==","queueTime":0,"applicationTime":383,"ttGuid":"","agentToken":"","atts":"ThJUG1kdSUU=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+</html>
