@@ -1,13 +1,8 @@
 'use strict'
 
-let fs = require('fs')
-
-let cheerio = require('cheerio')
-
-function log(x) {
-  console.log.apply(console, arguments)
-  return x
-}
+import fs from 'fs'
+import cheerio from 'cheerio'
+import { log } from './util'
 
 function toText(html) {
   return [
@@ -72,55 +67,6 @@ function parse(filename) {
     })
 
   save(tables, `${filename.split('.')[0]}.json`)
-}
-
-function compare(a, b) {
-  let zz = b.split('-').map(x => +x)
-  if (zz.length === 2) {
-    return a >= zz[0] && a <= zz[1]
-  }
-  return a === zz[0]
-}
-
-function lookup(item, tables) {
-  let mods = []
-  item.explicitMods.forEach(x => {
-    if (['Weapons', 'Armours'].includes(item.type[0])) {
-      let catType = {
-        'TwoHandWeapons': 'Local Bow and Two Handed Weapon Damage',
-        'OneHandWeapons': 'Local One Handed Weapon Damage',
-      }
-      let q = x.match(/Adds (\d+)(?:-(\d+))? (\w+ Damage)/)
-      if (q) {
-        let [, min, max, type] = q
-        mods = mods.concat([[min, 'Minimum'], [max, 'Maximum']]
-          .map(([x, t]) => [`Local ${t} ${type}`, +x, catType[item.type[1]]]))
-      }
-
-      q = x.match(/(\d+)% increased Critical Strike Chance/)
-      if (q) {
-        mods.push(['Local Critical Strike Chance +%', +q[1]])
-      }
-    }
-  })
-
-  mods.forEach(([name, value, cat]) => {
-    tables.forEach(x => {
-      if (cat && !x.path.includes(cat)) {
-        return
-      }
-      let i = x.rows[0].indexOf(name)
-      if (~i) {
-        x.rows.slice(1).forEach(row => {
-          let p = compare(value, row[i])
-          if (p) {
-            log(i, name, value, row[i], row[0])
-            //log(row[0])
-          }
-        })
-      }
-    })
-  })
 }
 
 function save(data, filename) {

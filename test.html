@@ -13,43 +13,13 @@ th,
 td {
   border: 1px solid #ccc;
 }
+p, th, td {
+  font-size: 12px;
+}
     </style>
   </head>
   <body>
     <h1>itemaffix</h1>
-    <script>
-'use strict'
-
-const cE = document.createElement.bind(document)
-
-function show(tables) {
-  let b = document.body
-  tables.forEach(t => {
-    let c = cE('div')
-
-    let h = cE('h2')
-    h.innerHTML = t.path.join(' &rarr; ')
-    c.appendChild(h)
-
-    let tt = cE('table')
-    t.rows.forEach((row, i) => {
-      let tr = cE('tr')
-      row.forEach(val => {
-        let c = cE(i ? 'td' : 'th')
-        c.innerHTML = typeof val === 'string' ? val.replace('\n', '<hr>') : JSON.stringify(val)
-        tr.appendChild(c)
-      })
-      tt.appendChild(tr)
-    })
-    c.appendChild(tt)
-
-    b.appendChild(c)
-  })
-}
-
-fetch('data/itemaffix.json')
-  .then(response => response.json())
-  .then(show)
-    </script>
+    <script src="ttt.js"></script>
   </body>
 </html>
